@@ -15,9 +15,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${worksans.className} min-h-screen bg-[#ace4ea]`}>
-        {/* <NavProvider>
+        <NavProvider>
           <Nav />
-        </NavProvider> */}
+        </NavProvider>
         <main className="md:mt-14 mt-12 text-[#091415]">{children}</main>
         <Footer />
       </body>
