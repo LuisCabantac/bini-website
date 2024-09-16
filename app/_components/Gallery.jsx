@@ -35,11 +35,10 @@ export default function Gallery() {
         ))}
         {zoomedImage && (
           <div className="zoomed__image__container" onClick={closeZoomedImage}>
-            <div className="relative md:w-[40%] md:h-[80%] w-[80%] h-[40%]">
+            <div className="md:w-[30%] md:h-[60%] w-[80%] h-[40%] flex justify-center items-center">
               <Image
                 src={zoomedImage}
                 alt="zoomed__image"
-                fill
                 className="object-cover"
               />
             </div>
