@@ -27,7 +27,7 @@ export default function Page() {
   useEffect(() => handleIsMobile(), [handleIsMobile]);
 
   return (
-    <section className="overflow-hidden">
+    <section>
       <Image
         src={isMobile ? bgMobile : bg}
         placeholder="blur"
@@ -37,9 +37,9 @@ export default function Page() {
         alt="Cherry On Top album cover"
       />
 
-      <div className="absolute md:bottom-[18%] right-0 md:pr-[6%] bottom-[10%] pr-[10.5%] z-20 translate-x-[-50%]">
+      {/* <div className="absolute md:bottom-[18%] right-0 md:pr-[6%] bottom-[10%] pr-[10.5%] z-20 translate-x-[-50%]">
         <Button path="/">Listen now</Button>
-      </div>
+      </div> */}
     </section>
   );
 }
