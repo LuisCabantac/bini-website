@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useLayoutEffect } from "react";
 
 import bg from "@/public/bg.jpg";
 import bgMobile from "@/public/bg-mobile.jpg";
@@ -17,14 +17,14 @@ export default function Page() {
   useEffect(
     function () {
       window.addEventListener("resize", handleIsMobile);
+      handleIsMobile();
+
       return () => {
         window.removeEventListener("resize", handleIsMobile);
       };
     },
     [handleIsMobile]
   );
-
-  useEffect(() => handleIsMobile(), [handleIsMobile]);
 
   return (
     <section className="overflow-hidden">
@@ -33,7 +33,7 @@ export default function Page() {
         placeholder="blur"
         fill
         quality={80}
-        className="object-cover object-top"
+        className="object-cover object-top overflow-hidden"
         alt="Cherry On Top album cover"
       />
 
