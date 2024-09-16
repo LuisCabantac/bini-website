@@ -8,7 +8,13 @@ const buttonSize = {
     "md:px-10 md:py-5 px-7 py-[1.20rem] md:text-lg text-base text-[#fffbe6]",
 };
 
-export default function Button({ href, path, size = "large", children }) {
+export default function Button({
+  href,
+  path,
+  size = "large",
+  onClick,
+  children,
+}) {
   const theme =
     path === "/"
       ? "hover:bg-[#e03131] bg-[#f03e3e]"
@@ -20,7 +26,9 @@ export default function Button({ href, path, size = "large", children }) {
       target="_blank"
       className={`${raleway.className} ${theme} ${buttonSize[size]} transition-colors rounded-full  font-extrabold cursor-pointer inline-block leading-[1.1]`}
     >
-      <button className="active:outline-none">{children}</button>
+      <button className="active:outline-none" onClick={onClick}>
+        {children}
+      </button>
     </a>
   );
 }
