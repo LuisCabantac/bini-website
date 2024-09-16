@@ -14,8 +14,6 @@ export default function NavLinks() {
     setIsMobileNav((nav) => !nav);
   }
 
-  const path = pathname === "/" ? "/" : "";
-
   return (
     <div className="z-10 relative md:bg-transparent">
       <div className="md:hidden flex absolute top-[-0.6rem] right-[-0.3rem] z-30">
@@ -98,7 +96,7 @@ export default function NavLinks() {
               );
             })}
             <li>
-              <Button href="/" path={path}>
+              <Button href="https://fandom.abs-cbn.com/bini" path={pathname}>
                 Join
               </Button>
             </li>

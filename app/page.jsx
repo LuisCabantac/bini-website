@@ -38,7 +38,9 @@ export default function Page() {
       />
 
       <div className="absolute md:bottom-[18%] right-0 md:pr-[6%] bottom-[10%] pr-[11%] z-20 translate-x-[-50%]">
-        <Button path="/">Listen now</Button>
+        <Button path="/" href="https://orcd.co/bini-cherryontop">
+          Listen now
+        </Button>
       </div>
     </section>
   );
