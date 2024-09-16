@@ -6,7 +6,6 @@ import useEmblaCarousel from "embla-carousel-react";
 import { NextButton, usePrevNextButtons } from "./EmblaCarouselArrowButtons";
 import { DotButton, useDotButton } from "./EmblaCarouselDotButton";
 import CarouselHeader from "./CarouselHeader";
-import EmblaSlide from "./EmblaSlide";
 import Image from "next/image";
 
 const TWEEN_FACTOR_BASE = 0.52;

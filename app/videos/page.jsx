@@ -19,7 +19,7 @@ export default async function Page() {
   ]);
 
   return (
-    <div className="md:mx-12 mx-8 md:mb-14 mb-12 flex flex-col md:gap-14 gap-12">
+    <div className="md:mx-12 mx-6 md:mb-14 mb-12 flex flex-col md:gap-14 gap-12">
       <MusicVideos musicVideos={musicVideos} />
       <LatestVideos videos={latestVideos} />
       <Playlist videos={playlistVideos} />

@@ -4,7 +4,7 @@ import HeaderTitle from "./HeaderTitle";
 
 export default function About() {
   return (
-    <section className="md:mx-12 mx-8">
+    <section className="md:mx-12 mx-6">
       <HeaderTitle type="h1">Mabuhay! We are BINI!</HeaderTitle>
       <p className="leading-normal text-lg md:mb-6 mb-4">
         BINI is a Filipino girl group created by ABS-CBN Entertainment,

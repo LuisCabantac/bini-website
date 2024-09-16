@@ -19,10 +19,10 @@ export default function Gallery() {
   }
 
   return (
-    <section className="md:mx-12 mx-8">
+    <section className="md:mx-12 mx-6">
       <HeaderTitle type="h2">Gallery</HeaderTitle>
       <div className="grid grid-cols-[auto_auto_auto] grid-rows-[auto_auto_auto] grid-flow-row rounded-lg overflow-hidden md:mt-6 mt-4">
-        {galleryData.map((item, index) => (
+        {galleryData.map((item) => (
           <div
             key={item.id}
             onClick={() => openZoomedImage(item.url)}
