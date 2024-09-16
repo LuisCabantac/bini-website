@@ -9,7 +9,7 @@ export default function Footer() {
 
   return (
     <footer
-      className={`md:px-12 md:py-8 px-8 py-8 md:text-base text-sm grid md:grid-cols-[2fr_1fr] text-[#35787f] ${
+      className={`md:mx-12 my-8 mx-6 md:text-base text-sm grid md:grid-cols-[2fr_1fr] text-[#35787f] ${
         pathname === "/" ? "hidden" : "block"
       } bg-[#8bd9e1]`}
     >
