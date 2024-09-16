@@ -33,13 +33,13 @@ export default function Page() {
         placeholder="blur"
         fill
         quality={100}
-        className="object-cover object-top"
+        className="object-cover block"
         alt="Cherry On Top album cover"
       />
 
-      {/* <div className="absolute md:bottom-[18%] right-0 md:pr-[6%] bottom-[10%] pr-[10.5%] z-20 translate-x-[-50%]">
+      <div className="absolute md:bottom-[18%] right-0 md:pr-[6%] bottom-[10%] pr-[10.5%] z-20 translate-x-[-50%]">
         <Button path="/">Listen now</Button>
-      </div> */}
+      </div>
     </section>
   );
 }
