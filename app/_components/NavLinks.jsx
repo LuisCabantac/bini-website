@@ -70,6 +70,7 @@ export default function NavLinks() {
             <li className="md:hidden">
               <Link
                 href="/"
+                onClick={handleSetIsMobileNav}
                 className={`transition-colors ${
                   pathname === "/" ? "text-[#f4d4d4] font-extrabold" : ""
                 }`}
@@ -82,6 +83,7 @@ export default function NavLinks() {
                 <li key={route}>
                   <Link
                     href={`/${route.toLowerCase()}`}
+                    onClick={handleSetIsMobileNav}
                     className={`transition-colors md:bg-transparent ${
                       pathname === `/${route.toLowerCase()}` && pathname !== "/"
                         ? "text-[#ffdc1a] hover:text-[#ffe034] font-extrabold"
