@@ -32,7 +32,7 @@ export default function Page() {
         src={isMobile ? bgMobile : bg}
         placeholder="blur"
         fill
-        quality={80}
+        quality={100}
         className="object-cover object-top"
         alt="Cherry On Top album cover"
       />

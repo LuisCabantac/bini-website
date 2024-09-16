@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
         <NavProvider>
           <Nav />
         </NavProvider>
-        <main className="md:mt-14 mt-12 text-[#091415]">{children}</main>
+        <main className="text-[#091415]">{children}</main>
         <Footer />
       </body>
     </html>
