@@ -27,7 +27,7 @@ export default function Page() {
   useEffect(() => handleIsMobile(), [handleIsMobile]);
 
   return (
-    <section className="h-[100vh]">
+    <section>
       <Image
         src={isMobile ? bgMobile : bg}
         placeholder="blur"
