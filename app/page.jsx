@@ -17,14 +17,14 @@ export default function Page() {
   useEffect(
     function () {
       window.addEventListener("resize", handleIsMobile);
+      handleIsMobile();
+
       return () => {
         window.removeEventListener("resize", handleIsMobile);
       };
     },
     [handleIsMobile]
   );
-
-  useEffect(() => handleIsMobile(), [handleIsMobile]);
 
   return (
     <section>
