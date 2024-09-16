@@ -109,7 +109,7 @@ const EmblaCarousel = (props) => {
                     <Image
                       className="embla__slide__img embla__parallax__img object-cover object-top"
                       src={index.snippet.thumbnails.maxres.url}
-                      alt="Your alt text"
+                      alt={index.snippet.title}
                       width={index.snippet.thumbnails.maxres.width}
                       height={index.snippet.thumbnails.maxres.height}
                     />
