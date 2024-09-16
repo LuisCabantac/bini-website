@@ -14,7 +14,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${worksans.className} min-h-screen bg-[#ace4ea]`}>
+      <body className={`${worksans.className} bg-[#ace4ea]`}>
         <NavProvider>
           <Nav />
         </NavProvider>
