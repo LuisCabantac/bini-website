@@ -7,8 +7,8 @@ function LatestRelease() {
   return (
     <section>
       <HeaderTitle type="h1">Latest release</HeaderTitle>
-      <div className="bg-[#cdeff2] border-1 border-[#8bd9e1] md:rounded-3xl rounded-xl md:h-[22rem] h-[8rem] grid grid-cols-[1fr_2fr] drop-shadow-md md:w-[100%] m-auto">
-        <div className="relative md:h-[18rem] h-[6rem] md:w-[18rem] w-[6rem] md:mx-8 md:my-8 mx-4 my-4">
+      <div className="bg-[#cdeff2] border-1 border-[#8bd9e1] md:rounded-3xl rounded-xl md:h-[22rem] h-[11rem] grid grid-cols-[1fr_2fr] drop-shadow-md md:w-[100%] m-auto">
+        <div className="relative md:h-[18rem] h-[9rem] md:w-[18rem] w-[9rem] md:mx-8 md:my-8 mx-4 my-4">
           <Image
             src={`https://i.scdn.co/image/ab67616d0000b273b89bd876c79f495ab3009444`}
             fill
@@ -16,7 +16,7 @@ function LatestRelease() {
             className="md:rounded-3xl rounded-xl"
           />
         </div>
-        <div className="md:py-8 md:px-8 flex flex-col md:gap-4 gap-2 justify-center items-start">
+        <div className="md:py-8 md:px-8 pr-3 flex flex-col md:gap-4 gap-2 justify-center items-start">
           <h3
             className={`${raleway.className} text-red-600 md:text-6xl text-2xl font-bold drop-shadow-md`}
           >
