@@ -1,22 +1,18 @@
 # BINI Website Concept
 
-A BINI website concept
-
-## API
-
-- [YouTube API](https://developers.google.com/youtube/v3)
+A BINI website concept built with Next.js 14, Tailwind CSS and YouTube Data API v3.
 
 ## Screenshots
 
-![home-page](https://github.com/user-attachments/assets/ffeea3f7-fdc0-4343-8ee4-6f4347a7b7ba)
-![about-page-1](https://github.com/user-attachments/assets/80332319-321d-4242-a35b-50f4e5bb91a6)
-![about-page-2](https://github.com/user-attachments/assets/0dc44cc3-8a21-4fe2-b048-02730a22d9ce)
-![about-page-3](https://github.com/user-attachments/assets/ca01655c-fce9-4a81-84da-d6b88cd11a58)
-![music-page-1](https://github.com/user-attachments/assets/119fbd34-ef93-4c40-8b62-026ba3e7dea6)
-![music-page-2](https://github.com/user-attachments/assets/f32e5e3a-66b7-472a-9e53-f90b7b814b97)
-![videos-page-1](https://github.com/user-attachments/assets/fcdf17bc-281c-4433-990c-7be2bc26c6f0)
-![videos-page-2](https://github.com/user-attachments/assets/9aac44e9-07d3-4cb8-b583-d9674bb0528f)
-![events-page](https://github.com/user-attachments/assets/a345b340-b6db-4ecd-a909-5ec73f811951)
+![home](https://github.com/user-attachments/assets/08a26cb7-f33c-4fa6-872c-0c4e80d3a28c)
+![about-1](https://github.com/user-attachments/assets/d0c7c072-476f-4286-a97a-40005178b4ed)
+![about-2](https://github.com/user-attachments/assets/b391c265-7865-45c7-a6b1-4a6145d012d2)
+![about-3](https://github.com/user-attachments/assets/e2e4978a-a70a-4f36-b0b0-8be65e60c411)
+![music-1](https://github.com/user-attachments/assets/df309b75-73e1-4224-8253-00808b3e3be0)
+![music-2](https://github.com/user-attachments/assets/10e5be0c-e2ac-43fa-b4c2-aa30ee4b5247)
+![videos-1](https://github.com/user-attachments/assets/104af0e4-0c7d-402e-b9f0-33fc5bf3ed66)
+![videos-2](https://github.com/user-attachments/assets/bd597f5c-6b0d-41e4-8757-0d0794662c9c)
+![events](https://github.com/user-attachments/assets/4c1a35ac-6628-4ba2-93cc-3552b389db51)
 
 ## Disclaimer
 
