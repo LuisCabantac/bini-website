@@ -14,11 +14,14 @@ export default function About() {
         producer MU Doctor. They officially debuted on June 11, 2021 with their
         debut single Born To Win.
       </p>
-      <Image
-        src={groupProfile}
-        alt="group"
-        className="object-cover rounded-xl"
-      />
+      <div className="relative md:h-[30rem] h-[14rem] w-full">
+        <Image
+          src={groupProfile}
+          alt="group"
+          className="object-cover rounded-xl"
+          fill
+        />
+      </div>
     </section>
   );
 }
