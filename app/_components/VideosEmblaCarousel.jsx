@@ -37,8 +37,10 @@ const EmblaCarousel = (props) => {
               <div className="embla__slide__number">
                 <div className="video__container md:h-[13rem] h-[8rem] md:w-[24rem] w-full relative">
                   <a
-                    href={`https://www.youtube.com/watch?v=${
-                      section === "playlist" ? index.id : index.id.videoId
+                    href={`https://www.youtube.com/${
+                      section === "playlist"
+                        ? `playlist?list=${index.id}`
+                        : `watch?v=${index.id.videoId}`
                     }`}
                     target="_blank"
                   >
