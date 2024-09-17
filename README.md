@@ -4,15 +4,15 @@ A BINI website concept built with Next.js 14, Tailwind CSS and YouTube Data API 
 
 ## Screenshots
 
-![home](https://github.com/user-attachments/assets/08a26cb7-f33c-4fa6-872c-0c4e80d3a28c)
-![about-1](https://github.com/user-attachments/assets/d0c7c072-476f-4286-a97a-40005178b4ed)
+![home](https://github.com/user-attachments/assets/29dbd89c-cd84-46ab-9488-eb5d1e86c26a)
+![about-1](https://github.com/user-attachments/assets/8d5c631e-61ba-414f-97bd-6b7d9e1f3638)
 ![about-2](https://github.com/user-attachments/assets/b391c265-7865-45c7-a6b1-4a6145d012d2)
-![about-3](https://github.com/user-attachments/assets/e2e4978a-a70a-4f36-b0b0-8be65e60c411)
-![music-1](https://github.com/user-attachments/assets/df309b75-73e1-4224-8253-00808b3e3be0)
-![music-2](https://github.com/user-attachments/assets/10e5be0c-e2ac-43fa-b4c2-aa30ee4b5247)
-![videos-1](https://github.com/user-attachments/assets/104af0e4-0c7d-402e-b9f0-33fc5bf3ed66)
-![videos-2](https://github.com/user-attachments/assets/bd597f5c-6b0d-41e4-8757-0d0794662c9c)
-![events](https://github.com/user-attachments/assets/4c1a35ac-6628-4ba2-93cc-3552b389db51)
+![about-3](https://github.com/user-attachments/assets/6b0c762c-a50d-425e-9167-0ca55b10a1ba)
+![music-1](https://github.com/user-attachments/assets/ad79890e-37bc-4e25-b13f-1632d740e5be)
+![music-2](https://github.com/user-attachments/assets/f2f3c61b-a609-43e8-8207-f75e1b33bd4c)
+![videos-1](https://github.com/user-attachments/assets/04c555ee-81c1-401c-a50d-ecef9a5389c8)
+![videos-2](https://github.com/user-attachments/assets/5bf070c2-fecc-424d-906e-093e8df2d879)
+![events-1](https://github.com/user-attachments/assets/8abee3fe-8480-41c0-9c91-e42cdc4a2766)
 
 ## Disclaimer
 
