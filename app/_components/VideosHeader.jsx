@@ -1,5 +1,5 @@
 import Button from "@/app/_components/Button";
-import HeaderTitle from "./HeaderTitle";
+import HeaderTitle from "@/app/_components/HeaderTitle";
 
 export default function VideosHeader({ href, children }) {
   return (

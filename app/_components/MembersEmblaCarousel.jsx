@@ -3,9 +3,15 @@
 import React, { useCallback, useEffect, useRef, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 
-import { NextButton, usePrevNextButtons } from "./EmblaCarouselArrowButtons";
-import { DotButton, useDotButton } from "./EmblaCarouselDotButton";
-import CarouselHeader from "./CarouselHeader";
+import {
+  NextButton,
+  usePrevNextButtons,
+} from "@/app/_components/EmblaCarouselArrowButtons";
+import {
+  DotButton,
+  useDotButton,
+} from "@/app/_components/EmblaCarouselDotButton";
+import CarouselHeader from "@/app/_components/CarouselHeader";
 import Image from "next/image";
 
 const TWEEN_FACTOR_BASE = 0.52;

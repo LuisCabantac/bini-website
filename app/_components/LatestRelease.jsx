@@ -30,15 +30,6 @@ function LatestRelease() {
           </Button>
         </div>
       </div>
-      {/* <div className="after:content-['▶'] after:absolute after:top-[42%] after:left-[42%] after:pb-[0.9rem] after:pt-[0.9rem] after:px-5 after:text-red-50 after:rounded-full after:bg-[#f03e3e] after:opacity-0 transition-all after:hover:opacity-100 relative overflow-hidden md:h-[16rem] h-[6rem] md:w-[16rem] w-[6rem] after:drop-shadow-2xl after:cursor-pointer">
-        <div className="relative md:h-[16rem] h-[6rem] md:w-[16rem] w-[6rem]">
-          <Image
-            src={`https://bini.abs-cbn.com/_next/image?url=https%3A%2F%2Fartist-bini-images.abs-cbn.com%2Fwp-content%2Fuploads%2F2024%2F07%2F18120501%2FCherry-On-Top-Cover-Art.jpg&w=640&q=75`}
-            fill
-            alt="Cherry on top album cover"
-            className="rounded-xl"
-          />
-        </div> */}
     </section>
   );
 }
