@@ -8,7 +8,7 @@ export const metadata = {
 
 export default async function Page() {
   return (
-    <div className="md:mx-12 mx-6 md:mb-14 mb-12 flex flex-col md:gap-14 gap-12">
+    <div className="md:mx-16 mx-6 md:mb-20 mb-12 flex flex-col md:gap-16 gap-12">
       <LatestRelease />
       <Albums />
       <Singles />

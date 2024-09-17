@@ -8,7 +8,7 @@ export const metadata = {
 
 export default function Page() {
   return (
-    <div className="md:mb-16 mb-14 flex flex-col md:gap-14 gap-12">
+    <div className="md:mb-20 mb-14 flex flex-col md:gap-16 gap-12">
       <About />
       <MembersCarousel />
       <Gallery />
