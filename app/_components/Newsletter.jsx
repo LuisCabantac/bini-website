@@ -13,7 +13,8 @@ export default function Newsletter() {
     setEmail(event.target.value);
   }
 
-  function handleSignup() {
+  function handleSignup(event) {
+    event.preventDefault();
     if (!email) return;
     if (emailPattern.test(email)) setIsSignedUp((signup) => !signup);
   }
@@ -52,7 +53,7 @@ export default function Newsletter() {
             <input
               type="email"
               placeholder="Enter your email"
-              className="bg-[#eefafb] px-2 md:py-0 py-2 focus:outline-0 grow rounded-full placeholder:text-[#99beb3]"
+              className="bg-[#eefafb] px-2 md:py-0 py-2 focus:outline-0 grow rounded-full placeholder:text-[#99beb3] outline-none"
               value={email}
               onChange={handleSetEmail}
             />
