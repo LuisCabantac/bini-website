@@ -21,12 +21,12 @@ export default function Gallery() {
   return (
     <section className="md:mx-16 mx-6">
       <HeaderTitle type="h2">Gallery</HeaderTitle>
-      <div className="grid grid-cols-[auto_auto_auto] grid-rows-[auto_auto_auto] grid-flow-row rounded-lg overflow-hidden md:mt-6 mt-4">
+      <div className="grid md:grid-cols-[auto_auto_auto_auto] grid-cols-[auto_auto] grid-flow-row rounded-lg overflow-hidden md:mt-6 mt-4">
         {galleryData.map((item) => (
           <div
             key={item.id}
             onClick={() => openZoomedImage(item.url)}
-            className="md:w-full md:h-[26rem] w-full h-[10rem]"
+            className="md:w-full md:h-[26rem] w-full h-[18rem]"
           >
             <div className="relative w-full h-full">
               <Image src={item.url} alt="image" fill className="object-cover" />
