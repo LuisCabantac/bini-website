@@ -25,12 +25,12 @@ export default function NavLinks() {
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="size-8 -rotate-90 transition-all ease-in"
+              className="size-8"
             >
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                d="M3.75 9h16.5m-16.5 6.75h16.5"
+                d="M6 18 18 6M6 6l12 12"
               />
             </svg>
           ) : (
@@ -40,7 +40,7 @@ export default function NavLinks() {
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="size-8 transition-all ease-out"
+              className="size-8"
             >
               <path
                 strokeLinecap="round"
