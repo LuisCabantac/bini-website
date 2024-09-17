@@ -3,11 +3,19 @@
 import { useState } from "react";
 import Button from "./Button";
 
+const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
 export default function Newsletter() {
+  const [email, setEmail] = useState("");
   const [isSignedUp, setIsSignedUp] = useState(false);
 
+  function handleSetEmail(event) {
+    setEmail(event.target.value);
+  }
+
   function handleSignup() {
-    setIsSignedUp((signup) => !signup);
+    if (!email) return;
+    if (emailPattern.test(email)) setIsSignedUp((signup) => !signup);
   }
 
   return (
@@ -22,7 +30,10 @@ export default function Newsletter() {
             Get our Newsletter
           </p>
 
-          <div className="flex flex-1 justify-between items-center bg-[#eefafb] rounded-full">
+          <form
+            className="flex flex-1 justify-between items-center bg-[#eefafb] rounded-full"
+            onSubmit={handleSetEmail}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -42,9 +53,13 @@ export default function Newsletter() {
               type="email"
               placeholder="Enter your email"
               className="bg-[#eefafb] px-2 md:py-0 py-2 focus:outline-0 grow rounded-full placeholder:text-[#99beb3]"
+              value={email}
+              onChange={handleSetEmail}
             />
-            <Button onClick={handleSignup}>Sign up</Button>
-          </div>
+            <Button onClick={handleSignup} type="submit">
+              Sign up
+            </Button>
+          </form>
         </div>
       )}
     </div>

@@ -13,6 +13,7 @@ export default function Button({
   path,
   size = "large",
   onClick,
+  type,
   children,
 }) {
   const theme =
@@ -26,7 +27,7 @@ export default function Button({
       target="_blank"
       className={`${raleway.className} ${theme} ${buttonSize[size]} transition-colors rounded-full  font-extrabold cursor-pointer inline-block leading-[1.1]`}
     >
-      <button className="active:outline-none" onClick={onClick}>
+      <button className="active:outline-none" onClick={onClick} type={type}>
         {children}
       </button>
     </a>
