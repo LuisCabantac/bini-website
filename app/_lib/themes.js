@@ -26,6 +26,7 @@ export const navigationTheme = {
 
 export const navigationLinksTheme = {
   textDefault: "text-[#ffdc1a] hover:text-[#ffe034]",
+  textHome: "text-[#f4d4d4]",
   textHomeHover: "hover:text-[#ffe3e3]",
   textDefaultHover: "hover:text-[#eefafb]",
 };

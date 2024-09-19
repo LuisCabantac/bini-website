@@ -60,7 +60,9 @@ export default function NavLinks() {
                 href="/"
                 onClick={handleSetIsMobileNav}
                 className={`transition-colors ${
-                  pathname === "/" ? "text-[#f4d4d4] font-extrabold" : ""
+                  pathname === "/"
+                    ? `${navigationLinksTheme.textHome} font-extrabold`
+                    : ""
                 }`}
               >
                 Home
