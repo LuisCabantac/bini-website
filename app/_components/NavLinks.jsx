@@ -70,7 +70,8 @@ export default function NavLinks() {
                     href={`/${route.toLowerCase()}`}
                     onClick={handleSetIsMobileNav}
                     className={`transition-colors md:bg-transparent ${
-                      pathname === `/${route.toLowerCase()}` && pathname !== "/"
+                      pathname.startsWith(`/${route.toLowerCase()}`) &&
+                      pathname !== "/"
                         ? "text-[#ffdc1a] hover:text-[#ffe034] font-extrabold"
                         : pathname === "/"
                         ? "hover:text-[#ffe3e3]"
