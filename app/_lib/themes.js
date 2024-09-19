@@ -4,8 +4,11 @@ export const bgColor = "bg-[#ace4ea]";
 export const defaultBtnTheme = "hover:bg-[#f8d300] bg-[#ffd801]";
 export const homeBtnTheme = "hover:bg-[#e03131] bg-[#f03e3e]";
 
-export const seeAllLinkBtn =
-  "bg-transparent border-2 border-[#1b3c40] text-[#1b3c40]";
+export const secondaryBtnTheme =
+  "bg-transparent border-2 border-[#1b3c40] text-[#1b3c40] hover:text-[#255257] hover:border-[#255257]";
+export const tertiaryBtnTheme =
+  "text-[#1b3c40] hover:text-[#255257] hover:bg-transparent";
+
 export const linkBtn = "text-[#fffbe6] bg-[#ffd801]";
 
 export const buttonSize = {
