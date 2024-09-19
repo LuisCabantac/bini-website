@@ -1,3 +1,5 @@
+import { playBtnTheme } from "@/app/_lib/themes";
+
 export default function PlayButtonOverlay({ type }) {
   return (
     <div className="absolute flex justify-center items-center h-full w-full play__icon opacity-0 pointer-events-none transition-opacity">
@@ -11,7 +13,7 @@ export default function PlayButtonOverlay({ type }) {
           type === "videos"
             ? "md:size-[4rem] size-10 md:p-5 p-3"
             : "md:size-20 size-14 md:p-6 p-4"
-        } bg-[#ffd801] fill-[#fffbe6] stroke-[#fffbe6] rounded-full`}
+        } ${playBtnTheme} rounded-full`}
       >
         <path
           strokeLinecap="round"

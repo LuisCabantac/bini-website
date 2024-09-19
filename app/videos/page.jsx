@@ -1,6 +1,6 @@
 import {
-  getLatestVideos,
   getMusicVideos,
+  getVideos,
   getPlaylists,
 } from "@/app/_lib/data-service";
 import MusicVideos from "@/app/_components/MusicVideos";
@@ -14,7 +14,7 @@ export const metadata = {
 export default async function Page() {
   const [musicVideos, latestVideos, playlistVideos] = await Promise.all([
     getMusicVideos(),
-    getLatestVideos(),
+    getVideos(5, "date"),
     getPlaylists(),
   ]);
 

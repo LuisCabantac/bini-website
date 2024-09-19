@@ -1,6 +1,6 @@
 import Image from "next/image";
 import groupProfile from "@/public/profile-group.jpeg";
-import HeaderTitle from "./HeaderTitle";
+import HeaderTitle from "@/app/_components/HeaderTitle";
 
 export default function About() {
   return (

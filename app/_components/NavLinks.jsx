@@ -4,6 +4,7 @@ import Link from "next/link";
 import Button from "@/app/_components/Button";
 import Socials from "@/app/_components/Socials";
 import { useNav } from "@/app/contexts/NavContext";
+import { navigationTheme, navigationLinksTheme } from "@/app/_lib/themes";
 
 const routes = ["About", "Music", "Videos", "Events"];
 
@@ -47,7 +48,9 @@ export default function NavLinks() {
                 ? `flex-col fixed md:top-2 top-0 md:pt-0 md:pr-0 md:pl-0 pl-4 md:pb-0 right-0 pr-5 pt-[5rem] pb-[3rem] ${
                     isSticky ? "top-0 pt-[5.2rem]" : "pt-[5.2rem]"
                   } flex md:bg-transparent ${
-                    pathname === "/" ? "bg-[#c92a2a]/90" : "bg-[#59c8d4]/90"
+                    pathname === "/"
+                      ? `${navigationTheme.homeIsSticky}`
+                      : `${navigationTheme.defaultIsSticky}`
                   }`
                 : "hidden"
             }`}
@@ -72,10 +75,10 @@ export default function NavLinks() {
                     className={`transition-colors md:bg-transparent ${
                       pathname.startsWith(`/${route.toLowerCase()}`) &&
                       pathname !== "/"
-                        ? "text-[#ffdc1a] hover:text-[#ffe034] font-extrabold"
+                        ? `${navigationLinksTheme.textDefault} font-extrabold`
                         : pathname === "/"
-                        ? "hover:text-[#ffe3e3]"
-                        : "hover:text-[#eefafb]"
+                        ? `${navigationLinksTheme.textHomeHover}`
+                        : `${navigationLinksTheme.textDefaultHover}`
                     }`}
                   >
                     {route}

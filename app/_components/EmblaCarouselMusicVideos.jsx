@@ -6,8 +6,11 @@ import {
   NextButton,
   PrevButton,
   usePrevNextButtons,
-} from "./EmblaCarouselArrowButtons";
-import { DotButton, useDotButton } from "./EmblaCarouselDotButton";
+} from "@/app/_components/EmblaCarouselArrowButtons";
+import {
+  DotButton,
+  useDotButton,
+} from "@/app/_components/EmblaCarouselDotButton";
 import Image from "next/image";
 
 const TWEEN_FACTOR_BASE = 0.2;

@@ -5,7 +5,7 @@ import { useState, useEffect, useCallback } from "react";
 
 import bg from "@/public/bg.jpg";
 import bgMobile from "@/public/bg-mobile.jpg";
-import Button from "./_components/Button";
+import Button from "@/app/_components/Button";
 
 export default function Page() {
   const [isMobile, setIsMobile] = useState(false);

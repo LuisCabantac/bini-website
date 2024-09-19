@@ -8,9 +8,7 @@ export default function Playlist({ videos }) {
 
   return (
     <section>
-      <VideosHeader href="https://www.youtube.com/@BINIPH/playlists">
-        Playlists
-      </VideosHeader>
+      <VideosHeader href="/videos/all-playlists">Playlists</VideosHeader>
       <VideosEmblaCarousel slides={playlist} section="playlist" />
     </section>
   );
