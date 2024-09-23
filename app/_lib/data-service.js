@@ -6,11 +6,15 @@ export async function getPlaylists(maxResults) {
     const res = await fetch(
       `${YOUTUBE_API_URL}playlists?part=snippet&channelId=${CHANNEL_ID}&maxResults=${maxResults}&key=${process.env.YOUTUBE_API_KEY}`
     );
-    const data = await res.json();
-    return data || { items: [] };
+    const result = await res.json();
+    if (!result) {
+      return {
+        notFound: true,
+      };
+    }
+    return result;
   } catch (err) {
     console.error(err.message);
-    return [];
   }
 }
 
@@ -20,10 +24,14 @@ export async function getMusicVideos() {
       `${YOUTUBE_API_URL}playlistItems?part=snippet&maxResults=50&playlistId=PL3_2Aib0pKCD_HCc1li7gSSbRI24CaQdA&key=${process.env.YOUTUBE_API_KEY}`
     );
     const result = await res.json();
-    return result || { items: [] };
+    if (!result) {
+      return {
+        notFound: true,
+      };
+    }
+    return result;
   } catch (err) {
     console.error(err.message);
-    return [];
   }
 }
 
@@ -35,9 +43,13 @@ export async function getVideos(query, maxResults, type) {
       }&type=${type}&key=${process.env.YOUTUBE_API_KEY}`
     );
     const result = await res.json();
-    return result || { items: [] };
+    if (!result) {
+      return {
+        notFound: true,
+      };
+    }
+    return result;
   } catch (err) {
     console.error(err.message);
-    return [];
   }
 }
