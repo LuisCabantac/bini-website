@@ -9,17 +9,22 @@ export const metadata = {
 };
 
 export default async function Page() {
-  const [musicVideos, latestVideos, playlistVideos] = await Promise.all([
-    getMusicVideos(),
-    getVideos("", 6, "video"),
-    getPlaylists(6),
-  ]);
+  try {
+    const [musicVideos, latestVideos, playlistVideos] = await Promise.all([
+      getMusicVideos(),
+      getVideos("", 6, "video"),
+      getPlaylists(6),
+    ]);
 
-  return (
-    <div className="md:mt-14 mt-12 md:mx-16 mx-6 md:mb-20 mb-12 flex flex-col md:gap-16 gap-12">
-      <MusicVideos musicVideos={musicVideos} />
-      <LatestVideos videos={latestVideos} />
-      <Playlist videos={playlistVideos} />
-    </div>
-  );
+    return (
+      <div className="md:mt-14 mt-12 md:mx-16 mx-6 md:mb-20 mb-12 flex flex-col md:gap-16 gap-12">
+        <MusicVideos musicVideos={musicVideos} />
+        <LatestVideos videos={latestVideos} />
+        <Playlist videos={playlistVideos} />
+      </div>
+    );
+  } catch (err) {
+    console.error(err.message);
+    return <p className="font-semibold md:text-2xl text-xl">{err.message}</p>;
+  }
 }
