@@ -7,9 +7,10 @@ export async function getPlaylists(maxResults) {
       `${YOUTUBE_API_URL}playlists?part=snippet&channelId=${CHANNEL_ID}&maxResults=${maxResults}&key=${process.env.YOUTUBE_API_KEY}`
     );
     const data = await res.json();
-    return data;
+    return data || { items: [] };
   } catch (err) {
     console.error(err.message);
+    return [];
   }
 }
 
