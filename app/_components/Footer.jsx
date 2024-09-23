@@ -1,12 +1,13 @@
 "use client";
 
-import { usePathname } from "next/navigation";
+import { footerTheme } from "@/app/_lib/themes";
+import { usePath } from "@/app/_contexts/PathContext";
+
 import Newsletter from "@/app/_components/Newsletter";
 import Socials from "@/app/_components/Socials";
-import { footerTheme } from "@/app/_lib/themes";
 
 export default function Footer() {
-  const pathname = usePathname();
+  const { pathname } = usePath();
 
   return (
     <footer

@@ -1,15 +1,16 @@
 "use client";
 
-import { useEffect, useCallback } from "react";
 import { raleway } from "@/app/_lib/fonts";
+import { navigationTheme } from "@/app/_lib/themes";
+import { useNav } from "@/app/_contexts/NavContext";
+import { usePath } from "@/app/_contexts/PathContext";
 
 import Logo from "@/app/_components/Logo";
 import NavLinks from "@/app/_components/NavLinks";
-import { useNav } from "@/app/contexts/NavContext";
-import { navigationTheme } from "@/app/_lib/themes";
 
 export default function Nav() {
-  const { isSticky, setIsSticky, isMobileNav, pathname } = useNav();
+  const { isSticky, isMobileNav } = useNav();
+  const { pathname } = usePath();
 
   const navTheme =
     pathname === "/" && !isSticky
@@ -23,21 +24,6 @@ export default function Nav() {
           window.innerWidth <= 900)
       ? navigationTheme.defaultIsSticky
       : navigationTheme.defaultNotSticky;
-
-  const handleSetIsSticky = useCallback(() => {
-    if (window.scrollY >= 40) {
-      setIsSticky(true);
-    } else setIsSticky(false);
-  }, [setIsSticky]);
-
-  useEffect(
-    function () {
-      window.addEventListener("scroll", handleSetIsSticky);
-
-      return () => window.addEventListener("scroll", handleSetIsSticky);
-    },
-    [handleSetIsSticky]
-  );
 
   return (
     <nav

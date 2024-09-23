@@ -1,7 +1,9 @@
 "use client";
 
 import React, { useCallback, useEffect, useRef } from "react";
+import Image from "next/image";
 import useEmblaCarousel from "embla-carousel-react";
+
 import {
   NextButton,
   PrevButton,
@@ -11,7 +13,6 @@ import {
   DotButton,
   useDotButton,
 } from "@/app/_components/EmblaCarouselDotButton";
-import Image from "next/image";
 
 const TWEEN_FACTOR_BASE = 0.2;
 
@@ -95,7 +96,7 @@ const EmblaCarouselMusicVideos = (props) => {
       .on("reInit", tweenParallax)
       .on("scroll", tweenParallax)
       .on("slideFocus", tweenParallax);
-  }, [emblaApi, tweenParallax]);
+  }, [emblaApi, tweenParallax, setTweenFactor, setTweenNodes]);
 
   return (
     <div className="embla">

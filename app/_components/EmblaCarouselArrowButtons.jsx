@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useCallback, useEffect, useState } from "react";
+
 import { raleway } from "@/app/_lib/fonts";
 
 export const usePrevNextButtons = (emblaApi, onButtonClick) => {

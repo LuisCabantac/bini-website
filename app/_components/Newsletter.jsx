@@ -1,12 +1,10 @@
 "use client";
 
 import { useState } from "react";
+
+import { formBgTheme, formInputTheme, formLabelTheme } from "@/app/_lib/themes";
+
 import Button from "@/app/_components/Button";
-import {
-  newsletterBgTheme,
-  newsletterInputTheme,
-  newsletterLabelTheme,
-} from "@/app/_lib/themes";
 
 const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
@@ -28,7 +26,7 @@ export default function Newsletter() {
     <div className="w-full md:w-[30rem] md:-mt-2 mt-4">
       {isSignedUp ? (
         <p
-          className={`${newsletterLabelTheme} font-bold md:text-2xl text-xl flex md:justify-center items-center md:h-[6.5rem] h-[4rem]`}
+          className={`${formLabelTheme} font-bold md:text-2xl text-xl flex md:justify-center items-center md:h-[6.5rem] h-[4rem]`}
         >
           Thank you for signing up!
         </p>
@@ -39,13 +37,13 @@ export default function Newsletter() {
           </p>
 
           <form
-            className={`${newsletterBgTheme} flex flex-1 justify-between items-center rounded-full`}
+            className={`${formBgTheme} flex flex-1 justify-between items-center rounded-full`}
             onSubmit={handleSetEmail}
           >
             <input
               type="email"
               placeholder="Enter your email"
-              className={`${newsletterInputTheme} px-6 md:py-0 py-2 focus:outline-0 grow rounded-full outline-none`}
+              className={`${formInputTheme} px-6 md:py-0 py-2 focus:outline-0 grow rounded-full outline-none`}
               value={email}
               onChange={handleSetEmail}
             />

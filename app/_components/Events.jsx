@@ -1,4 +1,5 @@
 import { eventsData } from "@/app/_lib/events-data";
+
 import EventCard from "@/app/_components/EventCard";
 
 export default function Events() {

@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useCallback, useEffect, useRef, useState } from "react";
+import Image from "next/image";
 import useEmblaCarousel from "embla-carousel-react";
 
 import {
@@ -12,7 +13,6 @@ import {
   useDotButton,
 } from "@/app/_components/EmblaCarouselDotButton";
 import CarouselHeader from "@/app/_components/CarouselHeader";
-import Image from "next/image";
 
 const TWEEN_FACTOR_BASE = 0.52;
 

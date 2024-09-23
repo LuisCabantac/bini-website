@@ -1,11 +1,13 @@
 import Image from "next/image";
+
 import { raleway } from "@/app/_lib/fonts";
-import HeaderTitle from "@/app/_components/HeaderTitle";
-import Button from "@/app/_components/Button";
 import {
   latestReleaseCardTextTheme,
   latestReleaseCardTheme,
 } from "@/app/_lib/themes";
+
+import HeaderTitle from "@/app/_components/HeaderTitle";
+import Button from "@/app/_components/Button";
 
 function LatestRelease() {
   return (

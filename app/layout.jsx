@@ -1,9 +1,11 @@
 import "@/app/_styles/globals.css";
-import { NavProvider } from "@/app/contexts/NavContext";
-import Nav from "@/app/_components/Nav";
-import Footer from "@/app/_components/Footer";
+
+import Providers from "./Providers";
 import { worksans } from "@/app/_lib/fonts";
 import { bgColor, textColor } from "@/app/_lib/themes";
+
+import Nav from "@/app/_components/Nav";
+import Footer from "@/app/_components/Footer";
 
 export const metadata = {
   title: {
@@ -16,11 +18,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${worksans.className} ${bgColor}`}>
-        <NavProvider>
+        <Providers>
           <Nav />
-        </NavProvider>
-        <main className={`md:mt-14 mt-12 ${textColor}`}>{children}</main>
-        <Footer />
+          <main className={textColor}>{children}</main>
+          <Footer />
+        </Providers>
       </body>
     </html>
   );

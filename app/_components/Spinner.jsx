@@ -1,4 +1,5 @@
 import Image from "next/image";
+
 import spinner from "@/public/spinner.png";
 
 export default function Spinner() {

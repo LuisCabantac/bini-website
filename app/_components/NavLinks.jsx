@@ -1,15 +1,19 @@
 "use client";
 
 import Link from "next/link";
+
+import { navigationTheme, navigationLinksTheme } from "@/app/_lib/themes";
+import { useNav } from "@/app/_contexts/NavContext";
+import { usePath } from "@/app/_contexts/PathContext";
+
 import Button from "@/app/_components/Button";
 import Socials from "@/app/_components/Socials";
-import { useNav } from "@/app/contexts/NavContext";
-import { navigationTheme, navigationLinksTheme } from "@/app/_lib/themes";
 
 const routes = ["About", "Music", "Videos", "Events"];
 
 export default function NavLinks() {
-  const { isMobileNav, setIsMobileNav, isSticky, pathname } = useNav();
+  const { isMobileNav, setIsMobileNav, isSticky } = useNav();
+  const { pathname } = usePath();
 
   function handleSetIsMobileNav() {
     setIsMobileNav((nav) => !nav);

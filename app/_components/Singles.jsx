@@ -1,4 +1,5 @@
 import { singlesData } from "@/app/_lib/music-data";
+
 import HeaderTitle from "@/app/_components/HeaderTitle";
 import MusicEmblaCarousel from "@/app/_components/MusicEmblaCarousel";
 

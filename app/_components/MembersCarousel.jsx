@@ -1,7 +1,8 @@
 import carouselData from "@/app/_lib/carousel-data";
-import MembersEmblaCarousel from "@/app/_components/MembersEmblaCarousel";
 import { raleway } from "@/app/_lib/fonts";
 import { membersCarousel } from "@/app/_lib/themes";
+
+import MembersEmblaCarousel from "@/app/_components/MembersEmblaCarousel";
 
 const OPTIONS = { loop: true, watchDrag: false };
 const SLIDES = carouselData;

@@ -3,6 +3,7 @@
 import React, { useCallback, useEffect, useRef } from "react";
 import Image from "next/image";
 import useEmblaCarousel from "embla-carousel-react";
+
 import {
   NextButton,
   PrevButton,

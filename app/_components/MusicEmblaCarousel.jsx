@@ -2,6 +2,8 @@
 
 import React from "react";
 import Image from "next/image";
+import useEmblaCarousel from "embla-carousel-react";
+
 import {
   DotButton,
   useDotButton,
@@ -11,7 +13,6 @@ import {
   NextButton,
   usePrevNextButtons,
 } from "@/app/_components/EmblaCarouselArrowButtons";
-import useEmblaCarousel from "embla-carousel-react";
 import PlayButtonOverlay from "@/app/_components/PlayButtonOverlay";
 
 const EmblaCarousel = (props) => {

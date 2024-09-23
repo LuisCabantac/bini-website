@@ -1,5 +1,5 @@
-import MusicVideosCarousel from "@/app/_components/MusicVideosCarousel";
 import HeaderTitle from "@/app/_components/HeaderTitle";
+import MusicVideosCarousel from "@/app/_components/MusicVideosCarousel";
 
 const OPTIONS = { loop: true };
 

@@ -1,30 +1,15 @@
 "use client";
 
 import Image from "next/image";
-import { useState, useEffect, useCallback } from "react";
 
 import bg from "@/public/bg.jpg";
 import bgMobile from "@/public/bg-mobile.jpg";
+import { useMobileWidth } from "@/app/_contexts/MobileContext";
+
 import Button from "@/app/_components/Button";
 
 export default function Page() {
-  const [isMobile, setIsMobile] = useState(false);
-
-  const handleIsMobile = useCallback(() => {
-    setIsMobile(window.innerWidth <= 900);
-  }, [setIsMobile]);
-
-  useEffect(
-    function () {
-      window.addEventListener("resize", handleIsMobile);
-      handleIsMobile();
-
-      return () => {
-        window.removeEventListener("resize", handleIsMobile);
-      };
-    },
-    [handleIsMobile]
-  );
+  const { isMobile } = useMobileWidth();
 
   return (
     <section>
@@ -37,7 +22,7 @@ export default function Page() {
         alt="Cherry On Top album cover"
       />
 
-      <div className="absolute md:bottom-[18%] right-0 md:pr-[6%] bottom-[10%] pr-[11%] z-20 translate-x-[-50%]">
+      <div className="absolute z-20 md:translate-x-[100%] md:right-[29%] md:bottom-[18%] bottom-[10%] left-[50%] translate-x-[-50%] translate-y-0">
         <Button path="/" href="https://orcd.co/bini-cherryontop">
           Listen now
         </Button>
