@@ -1,15 +1,15 @@
-export const textColor = "text-[#091415]";
+export const textColor = "text-[#13292b]";
 export const bgColor = "bg-[#ace4ea]";
 
 export const defaultBtnTheme = "hover:bg-[#f8d300] bg-[#ffd801]";
 export const homeBtnTheme = "hover:bg-[#e03131] bg-[#f03e3e]";
 
 export const secondaryBtnTheme =
-  "bg-transparent border-2 border-[#1b3c40] text-[#1b3c40] hover:text-[#255257] hover:border-[#255257]";
+  "md:px-6 md:py-3 px-4 py-2 bg-transparent border-2 border-[#1b3c40] text-[#1b3c40] hover:text-[#255257] hover:border-[#255257]";
 export const tertiaryBtnTheme =
   "text-[#1b3c40] hover:text-[#255257] hover:bg-transparent";
 
-export const linkBtn = "text-[#fffbe6] bg-[#ffd801]";
+export const linkBtn = "md:px-6 md:py-3 px-4 py-2 text-[#fffbe6] bg-[#ffd801]";
 
 export const buttonSize = {
   small: "md:px-6 md:py-3 px-3 py-2 md:text-base text-xs text-[#fffbe6]",
@@ -51,8 +51,8 @@ export const socialsDefaultTheme = "fill-[#fdffff]";
 
 export const playBtnTheme = "bg-[#ffd801] fill-[#fffbe6] stroke-[#fffbe6]";
 
-export const newsletterBgTheme = "bg-[#eefafb]";
-export const newsletterLabelTheme = "text-[#245055]";
-export const newsletterInputTheme = "bg-[#eefafb] placeholder:text-[#99beb3]";
+export const formBgTheme = "bg-[#eefafb]";
+export const formLabelTheme = "text-[#245055]";
+export const formInputTheme = "bg-[#eefafb] placeholder:text-[#99beb3]";
 
 export const footerTheme = "text-[#35787f] bg-[#8bd9e1]";
