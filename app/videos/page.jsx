@@ -1,8 +1,4 @@
-import {
-  getMusicVideos,
-  getVideos,
-  getPlaylists,
-} from "@/app/_lib/data-service";
+import { getMusicVideos, getVideos, getPlaylists } from "@/app/videos/actions";
 
 import MusicVideos from "@/app/_components/MusicVideos";
 import Playlist from "@/app/_components/Playlist";

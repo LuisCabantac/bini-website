@@ -1,4 +1,4 @@
-import { getVideos } from "@/app/_lib/data-service";
+import { getVideos } from "@/app/videos/actions";
 
 import AllVideos from "@/app/_components/AllVideos";
 import PageNotFound from "@/app/_components/PageNotFound";
