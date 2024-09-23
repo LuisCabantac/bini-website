@@ -1,16 +1,33 @@
 "use client";
 
-import { createContext, useContext, useState } from "react";
-import { usePathname } from "next/navigation";
+import {
+  createContext,
+  useContext,
+  useState,
+  useEffect,
+  useCallback,
+} from "react";
 
 const NavContext = createContext();
 
 function NavProvider({ children }) {
   const [isMobileNav, setIsMobileNav] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
 
-  const pathname = usePathname();
+  const handleSetIsSticky = useCallback(() => {
+    if (window.scrollY >= 40) {
+      setIsSticky(true);
+    } else setIsSticky(false);
+  }, [setIsSticky]);
+
+  useEffect(
+    function () {
+      window.addEventListener("scroll", handleSetIsSticky);
+
+      return () => window.addEventListener("scroll", handleSetIsSticky);
+    },
+    [handleSetIsSticky]
+  );
 
   return (
     <NavContext.Provider
@@ -19,9 +36,6 @@ function NavProvider({ children }) {
         setIsMobileNav,
         isSticky,
         setIsSticky,
-        pathname,
-        isMobile,
-        setIsMobile,
       }}
     >
       {children}
