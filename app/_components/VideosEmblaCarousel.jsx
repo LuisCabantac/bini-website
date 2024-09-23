@@ -2,6 +2,8 @@
 
 import React from "react";
 import Image from "next/image";
+import useEmblaCarousel from "embla-carousel-react";
+
 import {
   DotButton,
   useDotButton,
@@ -11,7 +13,6 @@ import {
   NextButton,
   usePrevNextButtons,
 } from "@/app/_components/EmblaCarouselArrowButtons";
-import useEmblaCarousel from "embla-carousel-react";
 import PlayButtonOverlay from "@/app/_components/PlayButtonOverlay";
 
 const EmblaCarousel = (props) => {
@@ -45,11 +46,11 @@ const EmblaCarousel = (props) => {
                     target="_blank"
                   >
                     <Image
-                      className="embla__slide__img embla__parallax__img object-cover object-top"
+                      className="embla__slide__img embla__parallax__img object-cover object-center"
                       src={
                         section === "playlist"
-                          ? index.snippet.thumbnails.maxres.url
-                          : index.snippet.thumbnails.medium.url
+                          ? index.snippet.thumbnails.high.url
+                          : index.snippet.thumbnails.high.url
                       }
                       alt={
                         section === "playlist"
