@@ -11,7 +11,7 @@ export default function ListAll({ content, section }) {
 
   return (
     <li className="md:w-[23rem] w-full">
-      <div className="video__container md:h-[12.5rem] h-[13rem] md:w-[23rem] relative">
+      <div className="video__container h-[12.8rem] md:w-[23rem] relative">
         <a
           href={`https://www.youtube.com/${
             section === "playlist"
