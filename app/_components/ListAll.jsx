@@ -11,7 +11,7 @@ export default function ListAll({ content, section }) {
 
   return (
     <li className="md:w-[23rem] w-full">
-      <div className="video__container h-[13rem] md:w-[23rem] relative">
+      <div className="video__container md:h-[12.5rem] h-[13rem] md:w-[23rem] relative">
         <a
           href={`https://www.youtube.com/${
             section === "playlist"
@@ -22,7 +22,7 @@ export default function ListAll({ content, section }) {
         >
           <Image
             className="embla__slide__img embla__parallax__img object-cover object-center"
-            src={content.snippet.thumbnails.medium.url}
+            src={content.snippet.thumbnails.high.url}
             alt={section === "playlist" ? content.snippet.title : content.title}
             fill
           />
