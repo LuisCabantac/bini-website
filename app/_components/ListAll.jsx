@@ -15,7 +15,7 @@ export default function ListAll({ content, section }) {
         <a
           href={`https://www.youtube.com/${
             section === "playlist"
-              ? `playlist?list=${content.id}`
+              ? `playlist?list=${content.id.playlistId}`
               : `watch?v=${content.id.videoId}`
           }`}
           target="_blank"
