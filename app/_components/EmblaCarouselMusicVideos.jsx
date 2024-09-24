@@ -102,14 +102,15 @@ const EmblaCarouselMusicVideos = (props) => {
     <div className="embla">
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
-          {slides.map((index) => (
-            <div className="embla__slide" key={index}>
+          {slides.map((content) => (
+            <div className="embla__slide" key={content}>
               <div className="embla__parallax">
                 <div className="embla__parallax__layer">
                   <Image
                     className="embla__slide__img embla__parallax__img"
-                    src={index.snippet.thumbnails.maxres}
-                    alt="Your alt text"
+                    src={content.snippet.thumbnails.maxres}
+                    alt={content.snippet.title}
+                    placeholder="blur"
                   />
                 </div>
               </div>

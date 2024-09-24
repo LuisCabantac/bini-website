@@ -99,20 +99,20 @@ const EmblaCarousel = (props) => {
     <div className="embla parallax relative">
       <div className="embla__viewport parallax" ref={emblaRef}>
         <div className="embla__container rounded-lg">
-          {slides.map((index) => (
-            <div className="embla__slide" key={index}>
+          {slides.map((content) => (
+            <div className="embla__slide" key={content}>
               <div className="embla__parallax">
                 <div className="embla__parallax__layer video__container relative">
                   <a
-                    href={`https://www.youtube.com/watch?v=${index.snippet.resourceId.videoId}`}
+                    href={`https://www.youtube.com/watch?v=${content.snippet.resourceId.videoId}`}
                     target="_blank"
                   >
                     <Image
                       className="embla__slide__img embla__parallax__img object-cover object-top"
-                      src={index.snippet.thumbnails.maxres.url}
-                      alt={index.snippet.title}
-                      width={index.snippet.thumbnails.maxres.width}
-                      height={index.snippet.thumbnails.maxres.height}
+                      src={content.snippet.thumbnails.maxres.url}
+                      alt={content.snippet.title}
+                      width={content.snippet.thumbnails.maxres.width}
+                      height={content.snippet.thumbnails.maxres.height}
                     />
                   </a>
                   <PlayButtonOverlay type="music-videos" />

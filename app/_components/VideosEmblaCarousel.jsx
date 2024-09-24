@@ -33,15 +33,15 @@ const EmblaCarousel = (props) => {
     <div className="embla videos relative">
       <div className="embla__viewport rounded-xl" ref={emblaRef}>
         <div className="embla__container">
-          {slides.map((index) => (
-            <div className="embla__slide" key={index.id}>
+          {slides.map((content) => (
+            <div className="embla__slide" key={content.id}>
               <div className="embla__slide__number">
                 <div className="video__container md:h-[13rem] h-[7.8rem] md:w-[24rem] w-full relative">
                   <a
                     href={`https://www.youtube.com/${
                       section === "playlist"
-                        ? `playlist?list=${index.id}`
-                        : `watch?v=${index.id.videoId}`
+                        ? `playlist?list=${content.id}`
+                        : `watch?v=${content.id.videoId}`
                     }`}
                     target="_blank"
                   >
@@ -49,13 +49,13 @@ const EmblaCarousel = (props) => {
                       className="embla__slide__img embla__parallax__img object-cover object-center"
                       src={
                         section === "playlist"
-                          ? index.snippet.thumbnails.high.url
-                          : index.snippet.thumbnails.high.url
+                          ? content.snippet.thumbnails.high.url
+                          : content.snippet.thumbnails.high.url
                       }
                       alt={
                         section === "playlist"
-                          ? index.snippet.title
-                          : index.title
+                          ? content.snippet.title
+                          : content.title
                       }
                       fill
                     />

@@ -106,15 +106,16 @@ const EmblaCarousel = (props) => {
     <div className="embla relative md:max-w-full m-auto">
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container relative">
-          {slides.map((index) => (
-            <div className="embla__slide" key={index.id}>
+          {slides.map((content) => (
+            <div className="embla__slide" key={content.id}>
               <div className="embla__slide__number">
                 <div className="relative md:h-[36rem] h-[24rem]">
                   <Image
-                    src={index.url}
-                    alt={index.name}
+                    src={content.url}
+                    alt={content.name}
                     className="embla__slide__img"
                     fill
+                    placeholder="blur"
                   />
                 </div>
               </div>

@@ -33,15 +33,15 @@ const EmblaCarousel = (props) => {
     <div className="embla music relative md:mt-6 mt-4">
       <div className="embla__viewport rounded-xl" ref={emblaRef}>
         <div className="embla__container">
-          {slides.map((index) => (
-            <div className="embla__slide" key={index.id}>
+          {slides.map((content) => (
+            <div className="embla__slide" key={content.id}>
               <div className="embla__slide__number">
                 <div className="video__container md:h-[14rem] h-[8rem] md:w-[14rem] w-[8rem] relative">
-                  <a href={index.url} target="_blank">
+                  <a href={content.url} target="_blank">
                     <Image
                       className="embla__slide__img object-cover object-center"
-                      src={index.imgUrl}
-                      alt={index.title}
+                      src={content.imgUrl}
+                      alt={content.title}
                       fill
                     />
                   </a>
@@ -52,9 +52,9 @@ const EmblaCarousel = (props) => {
               <div className="flex justify-center items-center text-center text-[#224a4e]">
                 <div>
                   <p className="font-semibold md:text-lg text-sm">
-                    {index.title}
+                    {content.title}
                   </p>
-                  <p className="text-xs">{index.info}</p>
+                  <p className="text-xs">{content.info}</p>
                 </div>
               </div>
             </div>
