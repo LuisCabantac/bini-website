@@ -36,12 +36,10 @@ export default function ListAll({ content, section }) {
         } font-semibold md:text-lg text-sm pt-1 md:w-[23rem]`}
       >
         {section === "playlist"
-          ? content.snippet.title
-              .replace(/&#39;/g, "'")
-              .replace(/&quote;/g, '"')
+          ? content.snippet.title.replace(/&#39;/g, "'").replace(/&quot;/g, '"')
           : content.snippet.title
               .replace(/&#39;/g, "'")
-              .replace(/&quote;/g, '"')
+              .replace(/&quot;/g, '"')
               .slice(0, isMobile ? 45 : 35)
               .concat("...")}
       </p>
