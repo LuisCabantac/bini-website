@@ -325,4 +325,5 @@ h4 {
   width: 1.5rem;
   background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAyNCAyNCIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZT0iIzFiM2M0MCI+CiAgPHBhdGggc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBkPSJNNiAxOCAxOCA2TTYgNmwxMiAxMiIgLz4KPC9zdmc+Cg==);
   background-size: 1.5rem 1.5rem;
+  cursor: pointer;
 }
