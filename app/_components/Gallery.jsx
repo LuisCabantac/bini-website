@@ -55,6 +55,7 @@ export default function Gallery() {
                 src={zoomedImage}
                 alt="zoomed__image"
                 className="object-cover"
+                placeholder="blur"
               />
             </div>
           </div>

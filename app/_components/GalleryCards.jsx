@@ -17,9 +17,10 @@ export default function GalleryCards({
           <div className="relative w-full h-full">
             <Image
               src={item.url}
-              alt="image"
+              alt={item.name}
               fill
               className="object-cover rounded-lg"
+              placeholder="blur"
             />
           </div>
         </div>

@@ -22,6 +22,7 @@ export default function About() {
           alt="group"
           className="object-cover rounded-xl"
           fill
+          placeholder="blur"
         />
       </div>
     </section>

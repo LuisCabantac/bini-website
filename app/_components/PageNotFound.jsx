@@ -16,6 +16,7 @@ export default function PageNotFound() {
             width={100}
             height={100}
             className="filter grayscale contrast-100"
+            placeholder="blur"
           />
           <h2 className="flex justify-center items-center font-bold md:text-2xl text-xl">
             PAGE NOT FOUND
