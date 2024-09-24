@@ -13,8 +13,8 @@ export default function AllVideos({ allVideosId, getData }) {
   const [result, setResult] = useState();
 
   const fetchVideos = useCallback(
-    async (query, maxResults, type) => {
-      const data = await getData(query, maxResults, type);
+    async (order, query, maxResults, type) => {
+      const data = await getData(order, query, maxResults, type);
       setResult(data.items);
     },
     [getData]
@@ -22,16 +22,16 @@ export default function AllVideos({ allVideosId, getData }) {
 
   useEffect(() => {
     allVideosId === "all-videos"
-      ? fetchVideos("", 10, "video")
-      : fetchVideos("", 10, "playlist");
+      ? fetchVideos("date", "", 10, "video")
+      : fetchVideos("date", "", 10, "playlist");
   }, [fetchVideos, allVideosId]);
 
   function handleFetch(event) {
     event.preventDefault();
     if (query) {
       allVideosId === "all-videos"
-        ? fetchVideos(query, 20, "video")
-        : fetchVideos(query, 20, "playlist");
+        ? fetchVideos("title", query, 20, "video")
+        : fetchVideos("title", query, 20, "playlist");
     }
   }
 

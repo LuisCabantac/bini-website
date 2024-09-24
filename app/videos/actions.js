@@ -25,10 +25,10 @@ export async function getMusicVideos() {
   }
 }
 
-export async function getVideos(query, maxResults, type) {
+export async function getVideos(order, query, maxResults, type) {
   try {
     const res = await fetch(
-      `${YOUTUBE_API_URL}search?part=snippet&channelId=${CHANNEL_ID}&maxResults=${maxResults}&order=date${
+      `${YOUTUBE_API_URL}search?part=snippet&channelId=${CHANNEL_ID}&maxResults=${maxResults}&order=${order}${
         query ? `&q=${query}` : ""
       }&type=${type}&key=${process.env.YOUTUBE_API_KEY}`
     );

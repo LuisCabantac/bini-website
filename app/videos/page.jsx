@@ -11,7 +11,7 @@ export const metadata = {
 export default async function Page() {
   const [musicVideos, latestVideos, playlistVideos] = await Promise.all([
     getMusicVideos(),
-    getVideos("", 6, "video"),
+    getVideos("date", "", 6, "video"),
     getPlaylists(6),
   ]);
 
