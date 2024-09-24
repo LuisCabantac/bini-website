@@ -10,7 +10,7 @@ import Search from "@/app/_components/Search";
 
 export default function AllVideos({ allVideosId, getData }) {
   const [query, setQuery] = useState("");
-  const [result, setResult] = useState();
+  const [result, setResult] = useState([]);
 
   const fetchVideos = useCallback(
     async (order, query, maxResults, type) => {
@@ -32,6 +32,10 @@ export default function AllVideos({ allVideosId, getData }) {
       allVideosId === "all-videos"
         ? fetchVideos("title", query, 20, "video")
         : fetchVideos("title", query, 20, "playlist");
+    } else {
+      allVideosId === "all-videos"
+        ? fetchVideos("date", "", 10, "video")
+        : fetchVideos("date", "", 10, "playlist");
     }
   }
 
@@ -64,7 +68,7 @@ export default function AllVideos({ allVideosId, getData }) {
         />
       </div>
 
-      {result ? (
+      {result.length > 0 ? (
         <ul className="flex flex-wrap justify-between items-center md:gap-y-6 gap-y-4 md:pt-0 pt-6">
           {result.map((video, i) => (
             <ListAll
@@ -76,7 +80,7 @@ export default function AllVideos({ allVideosId, getData }) {
         </ul>
       ) : (
         <p className="h-[20rem] flex justify-center items-center font-bold md:text-2xl text-xl">
-          No search results
+          No search results found
         </p>
       )}
     </div>
