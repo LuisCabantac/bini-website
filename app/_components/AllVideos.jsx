@@ -30,8 +30,8 @@ export default function AllVideos({ allVideosId, getData }) {
     event.preventDefault();
     if (query) {
       allVideosId === "all-videos"
-        ? fetchVideos("title", query, 20, "video")
-        : fetchVideos("title", query, 20, "playlist");
+        ? fetchVideos("relevance", query, 20, "video")
+        : fetchVideos("relevance", query, 20, "playlist");
     } else {
       allVideosId === "all-videos"
         ? fetchVideos("date", "", 10, "video")
