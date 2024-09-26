@@ -22,20 +22,20 @@ export default function AllVideos({ allVideosId, getData }) {
 
   useEffect(() => {
     allVideosId === "all-videos"
-      ? fetchVideos("date", "", 10, "video")
-      : fetchVideos("date", "", 10, "playlist");
+      ? fetchVideos("date", "", 9, "video")
+      : fetchVideos("date", "", 9, "playlist");
   }, [fetchVideos, allVideosId]);
 
   function handleFetch(event) {
     event.preventDefault();
     if (query) {
       allVideosId === "all-videos"
-        ? fetchVideos("relevance", query, 20, "video")
-        : fetchVideos("relevance", query, 20, "playlist");
+        ? fetchVideos("relevance", query, 18, "video")
+        : fetchVideos("relevance", query, 18, "playlist");
     } else {
       allVideosId === "all-videos"
-        ? fetchVideos("date", "", 10, "video")
-        : fetchVideos("date", "", 10, "playlist");
+        ? fetchVideos("date", "", 9, "video")
+        : fetchVideos("date", "", 9, "playlist");
     }
   }
 
