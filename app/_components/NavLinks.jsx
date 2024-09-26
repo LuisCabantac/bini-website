@@ -33,7 +33,7 @@ export default function NavLinks() {
   }, [isMobileNav]);
 
   return (
-    <div className="z-10 relative md:bg-transparent overflow-hidden">
+    <div className="z-10 relative md:bg-transparent">
       <div className="md:hidden flex absolute top-[-0.6rem] right-[-0.3rem] z-30">
         <button onClick={handleSetIsMobileNav}>
           <svg
