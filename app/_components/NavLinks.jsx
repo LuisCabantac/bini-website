@@ -9,11 +9,13 @@ import { usePath } from "@/app/_contexts/PathContext";
 
 import Button from "@/app/_components/Button";
 import Socials from "@/app/_components/Socials";
+import { useMobileWidth } from "../_contexts/MobileContext";
 
 const routes = ["About", "Music", "Videos", "Events"];
 
 export default function NavLinks() {
   const { isMobileNav, setIsMobileNav, isSticky } = useNav();
+  const { isMobile } = useMobileWidth();
   const { pathname } = usePath();
 
   function handleSetIsMobileNav() {
@@ -21,7 +23,7 @@ export default function NavLinks() {
   }
 
   useEffect(() => {
-    if (isMobileNav) {
+    if (isMobileNav && isMobile) {
       document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "";
@@ -30,7 +32,7 @@ export default function NavLinks() {
     return () => {
       document.body.style.overflow = "";
     };
-  }, [isMobileNav]);
+  }, [isMobileNav, isMobile]);
 
   return (
     <div className="z-10 relative md:bg-transparent">
