@@ -22,7 +22,7 @@ export default function Page() {
         alt="Cherry On Top album cover"
       />
 
-      <div className="absolute z-20 md:translate-x-[100%] md:right-[29%] md:bottom-[18%] bottom-[10%] left-[50%] translate-x-[-50%] translate-y-0">
+      <div className="absolute md:translate-x-[100%] md:right-[29%] md:bottom-[18%] bottom-[10%] left-[50%] translate-x-[-50%] translate-y-0">
         <Button path="/" href="https://orcd.co/bini-cherryontop">
           Listen now
         </Button>

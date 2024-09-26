@@ -22,9 +22,11 @@ export const navigationTheme = {
   homeNotSticky:
     "bg-gradient-to-b from-[#8d1d1d34] to-[rgba(201, 42, 42, 0.055)]",
   homeIsSticky: "bg-[#c92a2a]/90",
+  homeIsNav: "bg-[linear-gradient(to_bottom,#c92a2ae4_53%,#00000099_45%)]",
   defaultNotSticky:
     "bg-gradient-to-b from-[rgba(62,140,148,0.6)] to-[rgba(89, 200, 212, 0.055)] fade-in",
   defaultIsSticky: "bg-[#59c8d4]/90",
+  defaultIsNav: "bg-[linear-gradient(to_bottom,#59c8d4e4_53%,#00000099_45%)]",
 };
 
 export const navigationLinksTheme = {

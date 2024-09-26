@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useEffect } from "react";
 
 import { navigationTheme, navigationLinksTheme } from "@/app/_lib/themes";
 import { useNav } from "@/app/_contexts/NavContext";
@@ -19,8 +20,20 @@ export default function NavLinks() {
     setIsMobileNav((nav) => !nav);
   }
 
+  useEffect(() => {
+    if (isMobileNav) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isMobileNav]);
+
   return (
-    <div className="z-10 relative md:bg-transparent">
+    <div className="z-10 relative md:bg-transparent overflow-hidden">
       <div className="md:hidden flex absolute top-[-0.6rem] right-[-0.3rem] z-30">
         <button onClick={handleSetIsMobileNav}>
           <svg
@@ -44,16 +57,23 @@ export default function NavLinks() {
         </button>
       </div>
 
-      <div className="gap-12 pt-3 md:flex justify-end grid grid-cols-2 relative">
+      <div
+        className="gap-12 pt-3 md:flex justify-end grid grid-cols-2 relative"
+        onClick={handleSetIsMobileNav}
+      >
         <div className="transition-all text-center">
           <ul
-            className={`md:flex w-[100%] md:flex-row md:gap-12 gap-6 font-semibold md:items-center right-0 md:static ${
+            className={`md:flex w-full h-full md:flex-row md:gap-12 gap-6 font-semibold md:items-center right-0 md:static transition-all overflow-y-hidden md:bg-none ${
               isMobileNav
                 ? `flex-col fixed md:top-2 top-0 md:pt-0 md:pr-0 md:pl-0 pl-4 md:pb-0 right-0 pr-5 pt-[5rem] pb-[3rem] ${
                     isSticky ? "top-0 pt-[5.2rem]" : "pt-[5.2rem]"
                   } flex md:bg-transparent ${
-                    pathname === "/"
+                    pathname === "/" && isMobileNav
+                      ? `${navigationTheme.homeIsNav}`
+                      : pathname === "/" && isSticky
                       ? `${navigationTheme.homeIsSticky}`
+                      : pathname !== "/" && isMobileNav
+                      ? `${navigationTheme.defaultIsNav}`
                       : `${navigationTheme.defaultIsSticky}`
                   }`
                 : "hidden"
