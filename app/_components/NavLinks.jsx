@@ -5,11 +5,11 @@ import { useEffect } from "react";
 
 import { navigationTheme, navigationLinksTheme } from "@/app/_lib/themes";
 import { useNav } from "@/app/_contexts/NavContext";
+import { useMobileWidth } from "@/app/_contexts/MobileContext";
 import { usePath } from "@/app/_contexts/PathContext";
 
 import Button from "@/app/_components/Button";
 import Socials from "@/app/_components/Socials";
-import { useMobileWidth } from "../_contexts/MobileContext";
 
 const routes = ["About", "Music", "Videos", "Events"];
 
