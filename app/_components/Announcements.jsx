@@ -16,18 +16,7 @@ export default function Events() {
       >
         {announcementsData.map((announcement) => (
           <li key={announcement.id}>
-            <div className="flex justify-between items-center">
-              <h3 className="text-[#255257] font-bold md:text-5xl text-2xl md:pr-0 pr-4">
-                {announcement.title}
-              </h3>
-              <Button size="medium" href={announcement.btnUrl}>
-                {announcement.btnText}
-              </Button>
-            </div>
-            <p className="leading-normal text-lg md:mt-4 mt-2 md:mb-6 mb-4 announcement">
-              {announcement.description}
-            </p>
-            <div className="relative md:h-[30rem] h-[11rem] w-full">
+            <div className="relative md:h-[30rem] h-[11rem] w-full md:mb-4 mb-2">
               <Image
                 src={announcement.img}
                 className="object-cover rounded-xl"
@@ -35,6 +24,24 @@ export default function Events() {
                 placeholder="blur"
                 alt={announcement.title}
               />
+            </div>
+            <div className="flex justify-between items-center">
+              <h3 className="text-[#255257] font-bold md:text-5xl text-2xl md:pr-4">
+                {announcement.title}
+              </h3>
+              <div className="md:inline-block hidden">
+                <Button size="medium" href={announcement.btnUrl}>
+                  {announcement.btnText}
+                </Button>
+              </div>
+            </div>
+            <p className="leading-normal md:text-lg md:mt-4 mt-2 announcement">
+              {announcement.description}
+            </p>
+            <div className="flex justify-end md:hidden">
+              <Button size="medium" href={announcement.btnUrl}>
+                {announcement.btnText}
+              </Button>
             </div>
           </li>
         ))}

@@ -17,7 +17,7 @@ export default function Button({
         path === "/" ? homeBtnTheme : defaultBtnTheme
       } ${
         buttonSize[size]
-      } transition-colors rounded-full  font-extrabold cursor-pointer inline-block leading-[1.1]`}
+      } transition-colors rounded-full font-extrabold cursor-pointer inline-block leading-[1.1]`}
     >
       <button className="active:outline-none" onClick={onClick} type={type}>
         {children}
