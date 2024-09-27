@@ -1,9 +1,9 @@
 import "@/app/_styles/globals.css";
 
-import Providers from "./Providers";
 import { worksans } from "@/app/_lib/fonts";
 import { bgColor, textColor } from "@/app/_lib/themes";
 
+import Providers from "@/app/_components/Providers";
 import Nav from "@/app/_components/Nav";
 import Footer from "@/app/_components/Footer";
 

@@ -1,46 +1,35 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useRef } from "react";
+import { useQuery } from "@tanstack/react-query";
 
+import { getVideos } from "@/app/_lib/actions";
 import { tertiaryBtnTheme } from "@/app/_lib/themes";
 
 import ButtonLink from "@/app/_components/ButtonLink";
 import ListAll from "@/app/_components/ListAll";
 import Search from "@/app/_components/Search";
+import Spinner from "@/app/_components/Spinner";
 
-export default function AllVideos({ allVideosId, getData }) {
+export default function AllVideos({ allVideosId }) {
   const [query, setQuery] = useState("");
-  const [result, setResult] = useState([]);
+  const queryRef = useRef(null);
 
-  const fetchVideos = useCallback(
-    async (order, query, maxResults, type) => {
-      const data = await getData(order, query, maxResults, type);
-      setResult(data.items);
-    },
-    [getData]
-  );
+  const { data: result, isLoading } = useQuery({
+    queryKey: ["search", allVideosId, query],
+    queryFn: () =>
+      getVideos(
+        query ? "relevance" : "date",
+        query,
+        query ? 9 : 18,
+        allVideosId
+      ),
+  });
 
-  useEffect(() => {
-    allVideosId === "all-videos"
-      ? fetchVideos("date", "", 9, "video")
-      : fetchVideos("date", "", 9, "playlist");
-  }, [fetchVideos, allVideosId]);
-
-  function handleFetch(event) {
+  function handleSubmit(event) {
     event.preventDefault();
-    if (query) {
-      allVideosId === "all-videos"
-        ? fetchVideos("relevance", query, 18, "video")
-        : fetchVideos("relevance", query, 18, "playlist");
-    } else {
-      allVideosId === "all-videos"
-        ? fetchVideos("date", "", 9, "video")
-        : fetchVideos("date", "", 9, "playlist");
-    }
-  }
-
-  function handleSetQuery(event) {
-    setQuery(event.target.value);
+    const currentQuery = queryRef.current.value;
+    setQuery(currentQuery);
   }
 
   return (
@@ -61,15 +50,14 @@ export default function AllVideos({ allVideosId, getData }) {
           {allVideosId === "all-videos" ? "All videos" : "All playlists"}
         </h1>
         <Search
-          query={query}
-          handleFetch={handleFetch}
+          query={queryRef}
+          handleSubmit={handleSubmit}
           type={allVideosId}
-          handleSetQuery={handleSetQuery}
         />
       </div>
 
-      {result.length > 0 ? (
-        <ul className="flex flex-wrap justify-between items-center md:gap-y-6 gap-y-4 md:pt-0 pt-6">
+      {result ? (
+        <ul className="flex flex-wrap items-center md:gap-5 gap-y-4 md:pt-0 pt-6">
           {result.map((video, i) => (
             <ListAll
               key={i}
@@ -78,9 +66,11 @@ export default function AllVideos({ allVideosId, getData }) {
             />
           ))}
         </ul>
+      ) : isLoading ? (
+        <Spinner />
       ) : (
         <p className="h-[20rem] flex justify-center items-center font-bold md:text-2xl text-xl">
-          No search results found
+          No results found
         </p>
       )}
     </div>
