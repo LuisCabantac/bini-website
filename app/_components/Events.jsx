@@ -1,18 +1,22 @@
 import { eventsData } from "@/app/_lib/events-data";
 
+import HeaderTitle from "@/app/_components/HeaderTitle";
 import EventCard from "@/app/_components/EventCard";
 
 export default function Events() {
   return (
-    <ul className="flex flex-col gap-6">
-      {eventsData.map((event) => (
-        <EventCard
-          date={event.date}
-          name={event.name}
-          loc={event.loc}
-          key={event.date}
-        />
-      ))}
-    </ul>
+    <section>
+      <HeaderTitle type="h2">Upcoming events</HeaderTitle>
+      <ul className="flex flex-col gap-6 md:mt-6 mt-4">
+        {eventsData.map((event) => (
+          <EventCard
+            date={event.date}
+            name={event.name}
+            loc={event.loc}
+            key={event.date}
+          />
+        ))}
+      </ul>
+    </section>
   );
 }

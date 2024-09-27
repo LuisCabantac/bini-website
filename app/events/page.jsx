@@ -1,5 +1,5 @@
+import Announcements from "@/app/_components/Announcements";
 import Events from "@/app/_components/Events";
-import HeaderTitle from "@/app/_components/HeaderTitle";
 
 export const metadata = {
   title: "Events",
@@ -7,9 +7,9 @@ export const metadata = {
 
 export default function Page() {
   return (
-    <section className="md:mt-14 mt-12 md:mx-16 mx-6 md:mb-20 mb-12">
-      <HeaderTitle type="h1">Upcoming events</HeaderTitle>
+    <div className="md:mt-14 mt-12 md:mx-16 mx-6 md:mb-20 mb-12 flex flex-col md:gap-16 gap-12">
+      <Announcements />
       <Events />
-    </section>
+    </div>
   );
 }

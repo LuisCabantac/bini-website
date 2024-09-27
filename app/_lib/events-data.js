@@ -1,14 +1,28 @@
+import biniDocuseries from "@/public/announcements/bini_docuseries.webp";
+
+export const announcementsData = [
+  {
+    id: 1,
+    title: "BINI Chapter 1: Born to Win",
+    description: (
+      <>
+        They are ready to tell their story!🌸 Watch BINI Chapter 1: Born to Win,
+        an iWantTFC and ABS-CBN News Original Docuseries. NOW STREAMING
+        WORLDWIDE, only on iWantTFC! Visit{" "}
+        <a href="https://www.iwanttfc.com/" target="_blank">
+          iWantTFC.com
+        </a>{" "}
+        or Download the App, and Register to watch the show and other BINI
+        content.
+      </>
+    ),
+    btnText: "Watch",
+    btnUrl: "https://app.iwanttfc.com/ROWBiniDocuEp1",
+    img: biniDocuseries,
+  },
+];
+
 export const eventsData = [
-  {
-    date: "Sep 22",
-    name: "G Fest",
-    loc: "SMX Convention Center, Pasay City",
-  },
-  {
-    date: "Sep 26",
-    name: "BINI Chapter 1: Born To Win",
-    loc: "Streaming wordwide only on iWantTFC",
-  },
   {
     date: "Oct 15",
     name: "The Filipino Voices of Asia Billboard KPower 100",
