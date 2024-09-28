@@ -12,21 +12,21 @@ export default function Events() {
     <section>
       <HeaderTitle type="h1">Announcements</HeaderTitle>
       <ul
-        className={`${cardsBgColor} flex flex-col gap-6 border-1 md:rounded-3xl rounded-xl md:px-8 md:py-8 px-5 py-5`}
+        className={`${cardsBgColor} flex flex-col gap-6 border-1 md:rounded-2xl rounded-xl md:px-8 md:py-8 px-5 py-5`}
       >
         {announcementsData.map((announcement) => (
           <li key={announcement.id}>
             <div className="relative md:h-[30rem] h-[11rem] w-full md:mb-4 mb-2">
               <Image
                 src={announcement.img}
-                className="object-cover rounded-xl"
+                className="object-cover md:rounded-2xl rounded-xl"
                 fill
                 placeholder="blur"
                 alt={announcement.title}
               />
             </div>
             <div className="flex justify-between items-center">
-              <h3 className="text-[#255257] font-bold md:text-5xl text-2xl md:pr-4">
+              <h3 className="text-[#255257] font-bold md:text-4xl text-2xl md:pr-4">
                 {announcement.title}
               </h3>
               <div className="md:inline-block hidden">
@@ -35,7 +35,7 @@ export default function Events() {
                 </Button>
               </div>
             </div>
-            <p className="leading-normal md:text-lg md:mt-4 mt-2 announcement">
+            <p className="leading-normal md:text-lg mt-2 announcement">
               {announcement.description}
             </p>
             <div className="flex justify-end md:hidden">

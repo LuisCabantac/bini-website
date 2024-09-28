@@ -208,14 +208,14 @@ h4 {
 
 .embla__buttons {
   position: absolute;
-  right: 1.8rem;
+  right: 0.5rem;
   top: 43%;
 }
 
 @media (min-width: 768px) {
   .embla__buttons {
     position: absolute;
-    right: 22rem;
+    right: 18.5rem;
     top: 53%;
     transform: translate(0, -100%);
   }

@@ -9,10 +9,10 @@ export default function EventCard({ date, name, loc }) {
 
   return (
     <li
-      className={`${eventCardList} grid md:grid-cols-[8rem_3fr_2fr] md:grid-rows-1 grid-cols-[6rem_1fr] grid-rows-2 border-1 rounded-xl shadow-sm md:h-[8rem] h-[6rem] event__card`}
+      className={`${eventCardList} grid md:grid-cols-[8rem_3fr_2fr] md:grid-rows-1 grid-cols-[6rem_1fr] grid-rows-2 border-1 md:rounded-2xl rounded-xl shadow-sm md:h-[8rem] h-[6rem] event__card`}
     >
       <div
-        className={`${eventCardDiv} text-center font-extrabold flex flex-col justify-center row-span-2 rounded-xl md:px-4 md:py-6 px-2 py-4 md:h-[8rem] h-[6rem] event__calendar`}
+        className={`${eventCardDiv} text-center font-extrabold flex flex-col justify-center row-span-2 md:rounded-2xl rounded-xl md:px-4 md:py-6 px-2 py-4 md:h-[8rem] h-[6rem] event__calendar`}
       >
         <p className="md:text-2xl text-xl">{month}</p>
         <p className="md:text-5xl text-3xl">{num}</p>

@@ -19,7 +19,7 @@ export default function GalleryCards({
               src={item.url}
               alt={item.name}
               fill
-              className="object-cover rounded-lg"
+              className="object-cover md:rounded-2xl rounded-xl"
               placeholder="blur"
             />
           </div>

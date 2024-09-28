@@ -6,7 +6,7 @@ import HeaderTitle from "@/app/_components/HeaderTitle";
 
 export default function About() {
   return (
-    <section className="md:mx-16 mx-6">
+    <section>
       <HeaderTitle type="h1">Mabuhay! We are BINI!</HeaderTitle>
       <p className="leading-normal text-lg md:mb-6 mb-4">
         BINI is a Filipino girl group created by ABS-CBN Entertainment,
@@ -20,7 +20,7 @@ export default function About() {
         <Image
           src={groupProfile}
           alt="group"
-          className="object-cover rounded-xl"
+          className="object-cover md:rounded-2xl rounded-xl"
           fill
           placeholder="blur"
         />

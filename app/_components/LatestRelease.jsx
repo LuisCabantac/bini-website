@@ -14,14 +14,14 @@ function LatestRelease() {
     <section>
       <HeaderTitle type="h1">Latest release</HeaderTitle>
       <div
-        className={`${latestReleaseCardTheme} border-1 md:rounded-3xl rounded-xl md:h-[22rem] h-[12rem] grid grid-cols-[1fr_2fr] drop-shadow-md md:w-[100%] m-auto`}
+        className={`${latestReleaseCardTheme} border-1 md:rounded-2xl rounded-xl md:h-[22rem] h-[12rem] grid grid-cols-[1fr_2fr] drop-shadow-md md:w-[100%] m-auto`}
       >
         <div className="relative md:h-[18rem] h-[10rem] md:w-[18rem] w-[10rem] md:mx-8 md:my-8 ml-4 mr-2 my-4">
           <Image
             src={`https://i.scdn.co/image/ab67616d0000b273b89bd876c79f495ab3009444`}
             fill
             alt="Cherry on top album cover"
-            className="md:rounded-3xl rounded-xl"
+            className="md:rounded-2xl rounded-xl"
           />
         </div>
         <div className="md:py-8 md:px-8 flex flex-col md:gap-4 gap-2 justify-center items-start">

@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
       <body className={`${worksans.className} ${bgColor}`}>
         <Providers>
           <Nav />
-          <main className={textColor}>{children}</main>
+          <main className={`${textColor} md:mx-16 mx-6`}>{children}</main>
           <Footer />
         </Providers>
       </body>

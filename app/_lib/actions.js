@@ -13,7 +13,7 @@ export async function getPlaylists(maxResults) {
       (item) => item.snippet.thumbnails.maxres !== undefined
     );
   } catch (err) {
-    console.error(err.message);
+    throw new Error(err.message);
   }
 }
 
@@ -25,7 +25,7 @@ export async function getMusicVideos() {
     const result = await res.json();
     return result.items;
   } catch (err) {
-    console.error(err.message);
+    throw new Error(err.message);
   }
 }
 
@@ -41,6 +41,6 @@ export async function getVideos(order, query, maxResults, allVideosId) {
     const result = await res.json();
     return result.items;
   } catch (err) {
-    console.error(err.message);
+    throw new Error(err.message);
   }
 }

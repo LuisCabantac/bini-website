@@ -10,6 +10,7 @@ import { usePath } from "@/app/_contexts/PathContext";
 
 import Button from "@/app/_components/Button";
 import Socials from "@/app/_components/Socials";
+import Newsletter from "./Newsletter";
 
 const routes = ["About", "Music", "Videos", "Events"];
 
@@ -44,7 +45,9 @@ export default function NavLinks() {
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            className="size-8"
+            className={`size-9 transition-transform transform ${
+              isMobileNav ? "rotate-90" : "rotate-0"
+            }`}
           >
             <path
               strokeLinecap="round"
@@ -59,23 +62,16 @@ export default function NavLinks() {
         </button>
       </div>
 
-      <div
-        className="gap-12 pt-3 md:flex justify-end grid grid-cols-2 relative"
-        onClick={handleSetIsMobileNav}
-      >
+      <div className="gap-12 pt-3 md:flex justify-end grid grid-cols-2 relative">
         <div className="transition-all text-center">
           <ul
-            className={`md:flex w-full h-full md:flex-row md:gap-12 gap-6 font-semibold md:items-center right-0 md:static transition-all overflow-y-hidden md:bg-none ${
+            className={`md:flex w-full h-full md:flex-row md:gap-12 gap-8 font-semibold md:items-center right-0 md:static transition-all overflow-y-hidden md:bg-none ${
               isMobileNav
-                ? `flex-col fixed md:top-2 top-0 md:pt-0 md:pr-0 md:pl-0 pl-4 md:pb-0 right-0 pr-5 pt-[5rem] pb-[3rem] ${
+                ? `flex-col fixed md:top-2 top-0 md:pt-0 md:pb-0 pt-[12rem] pb-[3rem] right-0  ${
                     isSticky ? "top-0 pt-[5.2rem]" : "pt-[5.2rem]"
                   } flex md:bg-transparent ${
-                    pathname === "/" && isMobileNav
-                      ? `${navigationTheme.homeIsNav}`
-                      : pathname === "/" && isSticky
+                    pathname === "/"
                       ? `${navigationTheme.homeIsSticky}`
-                      : pathname !== "/" && isMobileNav
-                      ? `${navigationTheme.defaultIsNav}`
                       : `${navigationTheme.defaultIsSticky}`
                   }`
                 : "hidden"
@@ -115,11 +111,15 @@ export default function NavLinks() {
               );
             })}
             <li>
-              <Button href="https://fandom.abs-cbn.com/bini" path={pathname}>
+              <Button
+                href="https://fandom.abs-cbn.com/bini"
+                size="extraLarge"
+                path={pathname}
+              >
                 Join
               </Button>
             </li>
-            <li className="md:hidden flex justify-center">
+            <li className="md:hidden absolute bottom-12 flex items-center justify-center w-full">
               <Socials />
             </li>
           </ul>

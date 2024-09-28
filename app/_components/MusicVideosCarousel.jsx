@@ -98,7 +98,7 @@ const EmblaCarousel = (props) => {
   return (
     <div className="embla parallax relative">
       <div className="embla__viewport parallax" ref={emblaRef}>
-        <div className="embla__container rounded-lg">
+        <div className="embla__container md:rounded-2xl rounded-xl">
           {slides.map((content) => (
             <div className="embla__slide" key={content}>
               <div className="embla__parallax">

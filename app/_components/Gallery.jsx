@@ -20,7 +20,7 @@ export default function Gallery() {
   }
 
   return (
-    <section className="md:mx-16 mx-6">
+    <section>
       <HeaderTitle type="h2">Gallery</HeaderTitle>
       <div className="grid grid-cols-2 md:grid-cols-4 md:gap-4 gap-2 md:mt-6 mt-4">
         <GalleryCards

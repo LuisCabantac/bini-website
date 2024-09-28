@@ -33,7 +33,7 @@ export default function AllVideos({ allVideosId }) {
   }
 
   return (
-    <div className="md:mx-16 mx-6 md:mb-20 mb-12">
+    <div className="md:mb-20 mb-12">
       <ButtonLink href="/videos" btnTheme={tertiaryBtnTheme}>
         <div className="flex justify-center items-center gap-1 md:mt-1 mt-3">
           <svg className="w-[0.85rem]" viewBox="0 0 532 532">
