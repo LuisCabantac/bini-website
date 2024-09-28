@@ -26,11 +26,11 @@ export const navigationTheme = {
   homeNotSticky:
     "bg-gradient-to-b from-[#8d1d1d34] to-[rgba(201, 42, 42, 0.055)]",
   homeIsSticky: "bg-[#c92a2a]/90",
-  homeIsNav: "bg-[linear-gradient(to_bottom,#c92a2ae4_60%,#00000099_40%)]",
+  homeIsNav: "bg-gradient-to-tr from-[#c92a2a] to-[#ce3f3f]",
   defaultNotSticky:
     "bg-gradient-to-b from-[rgba(62,140,148,0.6)] to-[rgba(89, 200, 212, 0.055)]",
   defaultIsSticky: "bg-[#59c8d4]/90",
-  defaultIsNav: "bg-[linear-gradient(to_bottom,#59c8d4e4_60%,#00000099_40%)]",
+  defaultIsNav: "bg-gradient-to-tr from-[#59c8d4] to-[#6aced8]",
 };
 
 export const navigationLinksTheme = {
@@ -57,8 +57,8 @@ export const eventCardList = "border-[#8bd9e1] bg-[#cdeff2] text-[#14484D]";
 export const eventCardDiv = "text-[#152F32] bg-[#ffd801]";
 export const eventCardTextStroke = "text-[#44595b] stroke-[#44595b]";
 
-export const socialsFooterTheme = "w-5 fill-[#3e8c94]";
-export const socialsDefaultTheme = "w-6 fill-[#fdffff]";
+export const socialsFooterTheme = "fill-[#3e8c94]";
+export const socialsDefaultTheme = "fill-[#fdffff]";
 
 export const playBtnTheme = "bg-[#ffd801] fill-[#fffbe6] stroke-[#fffbe6]";
 

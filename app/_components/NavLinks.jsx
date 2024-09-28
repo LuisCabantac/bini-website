@@ -70,8 +70,12 @@ export default function NavLinks() {
                 ? `flex-col fixed md:top-2 top-0 md:pt-0 md:pb-0 pt-[12rem] pb-[3rem] right-0  ${
                     isSticky ? "top-0 pt-[12rem]" : "pt-[12rem]"
                   } flex md:bg-transparent ${
-                    pathname === "/"
+                    pathname === "/" && isMobileNav
+                      ? `${navigationTheme.homeIsNav}`
+                      : pathname === "/" && isSticky
                       ? `${navigationTheme.homeIsSticky}`
+                      : pathname !== "/" && isMobileNav
+                      ? `${navigationTheme.defaultIsNav}`
                       : `${navigationTheme.defaultIsSticky}`
                   }`
                 : "hidden"
