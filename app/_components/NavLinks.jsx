@@ -67,8 +67,8 @@ export default function NavLinks() {
           <ul
             className={`md:flex w-full h-full md:flex-row md:gap-12 gap-8 font-semibold md:items-center right-0 md:static transition-all overflow-y-hidden md:bg-none ${
               isMobileNav
-                ? `flex-col fixed md:top-2 top-0 md:pt-0 md:pb-0 pt-[18rem] pb-[3rem] right-0  ${
-                    isSticky ? "top-0 pt-[5.2rem]" : "pt-[5.2rem]"
+                ? `flex-col fixed md:top-2 top-0 md:pt-0 md:pb-0 pt-[12rem] pb-[3rem] right-0  ${
+                    isSticky ? "top-0 pt-[12rem]" : "pt-[12rem]"
                   } flex md:bg-transparent ${
                     pathname === "/"
                       ? `${navigationTheme.homeIsSticky}`
