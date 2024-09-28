@@ -18,7 +18,7 @@ export const buttonSize = {
     "md:px-6 md:py-3 px-4 py-2 bg-transparent border-2 border-[#245055] text-[#245055] hover:text-[#3a6266] hover:border-[#3a6266]",
   large:
     "md:px-8 md:py-4 px-6 py-[1.20rem] md:text-lg text-base text-[#fffbe6]",
-  extraLarge: "md:px-8 md:py-4 px-10 py-5 md:text-lg text-3xl text-[#fffbe6]",
+  extraLarge: "md:px-8 md:py-4 px-10 py-5 md:text-lg text-2xl text-[#fffbe6]",
 };
 
 export const navigationTheme = {

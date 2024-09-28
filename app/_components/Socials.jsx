@@ -2,7 +2,7 @@ import { socialsDefaultTheme, socialsFooterTheme } from "@/app/_lib/themes";
 
 export default function Socials({ path }) {
   return (
-    <ul className={`list-none flex ${path === "footer" ? "gap-3" : "gap-6"}`}>
+    <ul className="list-none flex gap-3">
       <li>
         <a href="https://www.instagram.com/bini_ph" target="_blank">
           <svg
