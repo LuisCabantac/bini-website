@@ -39,14 +39,8 @@ h4 {
     animation: rotate 1s infinite linear;
   }
 
-  .spinner-mini {
-    margin: 0;
-    width: 20px;
-    aspect-ratio: 1;
-    border-radius: 50%;
-    border: 2px solid #7ad3dd;
-    border-right-color: transparent;
-    animation: rotate 1s infinite linear;
+  .spinner.mini {
+    width: 100px;
   }
 
   @keyframes rotate {

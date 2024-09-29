@@ -4,7 +4,7 @@ import { useQuery } from "@tanstack/react-query";
 
 import { getPlaylists } from "@/app/_lib/actions";
 
-import Spinner from "@/app/_components/Spinner";
+import SpinnerMini from "@/app/_components/SpinnerMini";
 import VideosEmblaCarousel from "@/app/_components/VideosEmblaCarousel";
 import VideosHeader from "@/app/_components/VideosHeader";
 
@@ -22,7 +22,7 @@ export default function Playlist() {
     <section>
       <VideosHeader href="/videos/all-playlists">Playlists</VideosHeader>
       {isLoading ? (
-        <Spinner />
+        <SpinnerMini />
       ) : error ? (
         <p className="flex justify-center items-center font-bold md:text-2xl text-xl">
           {error.message}

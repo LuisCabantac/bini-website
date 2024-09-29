@@ -13,7 +13,7 @@ export async function getPlaylists(maxResults) {
       (item) => item.snippet.thumbnails.maxres !== undefined
     );
   } catch (err) {
-    throw new Error(err.message);
+    throw new Error("Unable to retrieve playlists. Please try again later.");
   }
 }
 
@@ -25,7 +25,7 @@ export async function getMusicVideos() {
     const result = await res.json();
     return result.items;
   } catch (err) {
-    throw new Error(err.message);
+    throw new Error("Unable to retrieve music videos. Please try again later.");
   }
 }
 
@@ -41,6 +41,6 @@ export async function getVideos(order, query, maxResults, allVideosId) {
     const result = await res.json();
     return result.items;
   } catch (err) {
-    throw new Error(err.message);
+    throw new Error("Unable to retrieve videos. Please try again later.");
   }
 }
