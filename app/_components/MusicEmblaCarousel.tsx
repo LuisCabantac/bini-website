@@ -41,7 +41,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
       <div className="embla__viewport rounded-xl md:rounded-2xl" ref={emblaRef}>
         <div className="embla__container">
           {slides.map((content) => (
-            <div className="embla__slide" key={content.id}>
+            <div className="embla__slide" key={content.title}>
               <div className="embla__slide__number">
                 <div className="video__container relative h-[8rem] w-[8rem] md:h-[14rem] md:w-[14rem]">
                   <a href={content.url} target="_blank">

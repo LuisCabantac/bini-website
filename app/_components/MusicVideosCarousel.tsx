@@ -114,10 +114,7 @@ const MusicVideosCarousel: React.FC<PropType> = (props) => {
       <div className="embla__viewport parallax" ref={emblaRef}>
         <div className="embla__container rounded-xl md:rounded-2xl">
           {slides.map((content) => (
-            <div
-              className="embla__slide"
-              key={content.snippet.resourceId.videoId}
-            >
+            <div className="embla__slide" key={content.snippet.title}>
               <div className="embla__parallax">
                 <div className="embla__parallax__layer video__container relative">
                   <a
