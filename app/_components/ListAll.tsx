@@ -3,15 +3,15 @@
 import Image from "next/image";
 
 import { useMobileWidth } from "@/app/_contexts/MobileContext";
+import { VideosItemsType, VideosId } from "@/app/_lib/actions";
 
-import { ContentType } from "@/app/_components/AllVideos";
 import PlayButtonOverlay from "@/app/_components/PlayButtonOverlay";
 
 export default function ListAll({
   content,
   section,
 }: {
-  content: ContentType;
+  content: VideosItemsType;
   section: string;
 }) {
   const { isMobile } = useMobileWidth();
@@ -22,8 +22,8 @@ export default function ListAll({
         <a
           href={`https://www.youtube.com/${
             section === "playlist"
-              ? `playlist?list=${content.id.playlistId}`
-              : `watch?v=${content.id.videoId}`
+              ? `playlist?list=${(content.id as VideosId).playlistId}`
+              : `watch?v=${(content.id as VideosId).videoId}`
           }`}
           target="_blank"
         >
