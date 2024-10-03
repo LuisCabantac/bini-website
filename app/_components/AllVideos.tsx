@@ -11,15 +11,6 @@ import ListAll from "@/app/_components/ListAll";
 import Search from "@/app/_components/Search";
 import Spinner from "@/app/_components/Spinner";
 
-export interface ContentType {
-  id: { playlistId?: string; videoId?: string };
-  title?: string;
-  snippet: {
-    title?: string;
-    thumbnails: { high: { url: string } };
-  };
-}
-
 export default function AllVideos({ allVideosId }) {
   const [query, setQuery] = useState<string>("");
   const queryRef = useRef(null);
@@ -67,7 +58,7 @@ export default function AllVideos({ allVideosId }) {
 
       {result ? (
         <ul className="flex flex-wrap items-center gap-y-4 pt-6 md:gap-5 md:pt-0">
-          {result.map((video: ContentType, i) => (
+          {result.map((video, i) => (
             <ListAll
               key={i}
               content={video}
