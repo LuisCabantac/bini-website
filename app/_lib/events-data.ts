@@ -30,26 +30,6 @@ export const announcementsData: AnnouncementsDataType[] = [
 
 export const eventsData: EventsDataType[] = [
   {
-    date: "Oct 13",
-    name: "ASIYA Asian Music Festival & Conference",
-    loc: "World Trade Center, Manila Philippines",
-  },
-  {
-    date: "Oct 15",
-    name: "Billboard PH Mainstage",
-    loc: "SM Mall of Asia Arena",
-  },
-  {
-    date: "Oct 15",
-    name: "BINI Official Light Stick",
-    loc: "Location TBD",
-  },
-  {
-    date: "Oct 20",
-    name: "IAM WORLDWIDE HIS7ORY 7TH ANNIVERSARY Anniversary + Music Festival",
-    loc: "SM Mall of Asia Arena",
-  },
-  {
     date: "Nov 16",
     name: "Grand BINIverse Day 1",
     loc: "Araneta Coliseum",
