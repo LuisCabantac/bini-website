@@ -1,6 +1,6 @@
 # BINI Website Concept
 
-A BINI website concept built with Next.js 14, Tailwind CSS and YouTube Data API v3.
+Website concept for BINI, showcasing their music, videos, and upcoming events.
 
 ## Screenshots
 
@@ -13,6 +13,12 @@ A BINI website concept built with Next.js 14, Tailwind CSS and YouTube Data API 
 ![videos-1](https://github.com/user-attachments/assets/04c555ee-81c1-401c-a50d-ecef9a5389c8)
 ![videos-2](https://github.com/user-attachments/assets/5bf070c2-fecc-424d-906e-093e8df2d879)
 ![events-1](https://github.com/user-attachments/assets/8abee3fe-8480-41c0-9c91-e42cdc4a2766)
+
+## Built using
+
+- Next.js 14
+- Tailwind CSS
+- YouTube Data API v3
 
 ## Disclaimer
 
