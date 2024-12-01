@@ -4,9 +4,9 @@ import Image from "next/image";
 
 import bg from "@/public/bg.jpg";
 import bgMobile from "@/public/bg-mobile.jpg";
-import { useMobileWidth } from "@/app/_contexts/MobileContext";
+import { useMobileWidth } from "@/contexts/MobileContext";
 
-import Button from "@/app/_components/Button";
+import Button from "@/components/Button";
 
 export default function Page() {
   const { isMobile } = useMobileWidth();

@@ -1,11 +1,11 @@
-import "@/app/_styles/globals.css";
+import React from "react";
 
-import { worksans } from "@/app/_lib/fonts";
-import { bgColor, textColor } from "@/app/_lib/themes";
+import "@/styles/globals.css";
+import { worksans } from "@/lib/fonts";
 
-import Providers from "@/app/_components/Providers";
-import Nav from "@/app/_components/Nav";
-import Footer from "@/app/_components/Footer";
+import Providers from "@/components/Providers";
+import Nav from "@/components/Nav";
+import Footer from "@/components/Footer";
 
 export const metadata = {
   title: {
@@ -14,13 +14,17 @@ export const metadata = {
   },
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
-      <body className={`${worksans.className} ${bgColor}`}>
+      <body className={`${worksans.className} bg-[#ace4ea]`}>
         <Providers>
           <Nav />
-          <main className={`${textColor} mx-6 md:mx-16`}>{children}</main>
+          <main className="mx-6 text-[#245055] md:mx-16">{children}</main>
           <Footer />
         </Providers>
       </body>

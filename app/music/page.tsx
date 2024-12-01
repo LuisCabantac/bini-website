@@ -1,6 +1,6 @@
-import LatestRelease from "@/app/_components/LatestRelease";
-import Albums from "@/app/_components/Albums";
-import Singles from "@/app/_components/Singles";
+import LatestRelease from "@/components/LatestRelease";
+import Albums from "@/components/Albums";
+import Singles from "@/components/Singles";
 
 export const metadata = {
   title: "Music",

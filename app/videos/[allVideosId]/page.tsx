@@ -1,5 +1,5 @@
-import AllVideos from "@/app/_components/AllVideos";
-import PageNotFound from "@/app/_components/PageNotFound";
+import AllVideos from "@/components/AllVideos";
+import PageNotFound from "@/components/PageNotFound";
 
 export const metadata = {
   title: "All",

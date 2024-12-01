@@ -1,5 +1,5 @@
-import Announcements from "@/app/_components/Announcements";
-import Events from "@/app/_components/Events";
+import Announcements from "@/components/Announcements";
+import Events from "@/components/Events";
 
 export const metadata = {
   title: "Events",

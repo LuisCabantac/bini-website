@@ -1,6 +1,6 @@
-import About from "@/app/_components/About";
-import MembersCarousel from "@/app/_components/MembersCarousel";
-import Gallery from "@/app/_components/Gallery";
+import About from "@/components/About";
+import MembersCarousel from "@/components/MembersCarousel";
+import Gallery from "@/components/Gallery";
 
 export const metadata = {
   title: "About",

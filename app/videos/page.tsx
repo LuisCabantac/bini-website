@@ -1,6 +1,6 @@
-import MusicVideos from "@/app/_components/MusicVideos";
-import Playlist from "@/app/_components/Playlist";
-import LatestVideos from "@/app/_components/LatestVideos";
+import MusicVideos from "@/components/MusicVideos";
+import Playlist from "@/components/Playlist";
+import LatestVideos from "@/components/LatestVideos";
 
 export const metadata = {
   title: "Videos",
