@@ -84,7 +84,7 @@ export default function NavLinks() {
                 href="/"
                 onClick={handleSetIsMobileNav}
                 className={`transition-colors ${
-                  pathname === "/" ? "font-extrabold text-[#f4d4d4]" : ""
+                  pathname === "/" ? "font-bold text-[#f4d4d4]" : ""
                 }`}
               >
                 Home
@@ -99,7 +99,7 @@ export default function NavLinks() {
                     className={`transition-colors md:bg-transparent ${
                       pathname.startsWith(`/${route.toLowerCase()}`) &&
                       pathname !== "/"
-                        ? "font-extrabold text-[#ffdc1a] hover:text-[#ffe034]"
+                        ? "font-bold text-[#ffdc1a] hover:text-[#ffe034]"
                         : pathname === "/"
                           ? "hover:text-[#ffe3e3]"
                           : "hover:text-[#eefafb]"
@@ -113,7 +113,7 @@ export default function NavLinks() {
             <li>
               <Button
                 href="https://fandom.abs-cbn.com/bini"
-                size="extraLarge"
+                size="large"
                 path={pathname}
               >
                 Join

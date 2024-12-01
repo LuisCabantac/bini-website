@@ -26,7 +26,7 @@ export default function Nav() {
 
   return (
     <nav
-      className={`${raleway.className} sticky top-0 flex items-center justify-between px-5 pb-4 pt-4 text-2xl text-[#fdffff] md:grid md:grid-cols-[1fr_1fr] md:px-10 md:pb-3 md:pt-0 md:text-lg ${navTheme} z-10 overflow-hidden font-bold leading-[1.1]`}
+      className={`${raleway.className} sticky top-0 flex items-center justify-between px-5 pb-4 pt-4 text-2xl text-[#fdffff] md:grid md:grid-cols-[1fr_1fr] md:px-12 md:pb-3 md:pt-0 md:text-lg ${navTheme} z-10 overflow-hidden font-semibold leading-[1.1]`}
     >
       <Logo />
       <NavLinks />
