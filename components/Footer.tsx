@@ -18,16 +18,7 @@ export default function Footer() {
 
       <Newsletter />
       <p className="mt-4 text-xs md:mt-0 md:text-inherit">
-        &copy; ABS-CBN Corporation. Designed by{" "}
-        <span className="font-semibold">
-          <a
-            href="https://github.com/LuisCabantac/"
-            target="_blank"
-            className="underline"
-          >
-            Luis Cabantac
-          </a>
-        </span>
+        &copy; ABS-CBN Corporation. Designed by Luis Cabantac
       </p>
     </footer>
   );
