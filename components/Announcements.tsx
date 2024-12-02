@@ -12,16 +12,15 @@ export default function Events() {
       <ul className="border-1 flex flex-col gap-6 rounded-xl bg-[#cdeff2] px-5 py-5 md:rounded-2xl md:px-8 md:py-8">
         {announcementsData.map((announcement) => (
           <li key={announcement.id}>
-            <div className="relative mb-2 h-[11rem] w-full md:mb-4 md:h-[30rem]">
-              <Image
-                src={announcement.img}
-                className="rounded-xl object-cover md:rounded-2xl"
-                fill
-                placeholder="blur"
-                alt={announcement.title}
-              />
-            </div>
-            <div className="flex items-center justify-between">
+            <Image
+              src={announcement.img}
+              className="w-full rounded-xl object-cover md:rounded-2xl"
+              width={1000}
+              height={1000}
+              placeholder="blur"
+              alt={announcement.title}
+            />
+            <div className="mt-4 flex items-center justify-between">
               <h3 className="text-2xl font-bold text-[#255257] md:pr-4 md:text-4xl">
                 {announcement.title}
               </h3>
