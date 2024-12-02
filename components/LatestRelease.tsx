@@ -9,8 +9,8 @@ function LatestRelease() {
   return (
     <section>
       <HeaderTitle type="h1">Latest release</HeaderTitle>
-      <div className="border-1 m-auto grid h-[12rem] grid-cols-[1fr_2fr] rounded-xl border-[#8bd9e1] bg-[#cdeff2] drop-shadow-md md:h-[22rem] md:w-[100%] md:rounded-2xl">
-        <div className="relative my-4 ml-4 mr-2 h-[10rem] w-[10rem] md:mx-8 md:my-8 md:h-[18rem] md:w-[18rem]">
+      <div className="m-auto grid h-[11rem] grid-cols-[1fr_2fr] gap-2 rounded-xl border border-[#8bd9e1] bg-[#cdeff2] drop-shadow-md md:h-[20rem] md:w-[100%] md:rounded-2xl">
+        <div className="relative my-4 ml-4 mr-2 h-[9rem] w-[9rem] md:mx-8 md:my-8 md:h-[16rem] md:w-[16rem]">
           <Image
             src={`https://i.scdn.co/image/ab67616d0000b273b89bd876c79f495ab3009444`}
             fill

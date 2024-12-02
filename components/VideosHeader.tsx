@@ -15,7 +15,7 @@ export default function VideosHeader({
       <HeaderTitle type="h2">{children}</HeaderTitle>
       <ButtonLink
         href={href}
-        btnTheme="md:px-6 md:py-3 px-4 py-2 bg-transparent border-2 border-[#245055] text-[#245055] hover:text-[#3a6266] hover:border-[#3a6266]"
+        btnTheme="px-4 py-2 bg-transparent border-2 border-[#245055] text-[#245055] hover:text-[#3a6266] hover:border-[#3a6266]"
       >
         See all
       </ButtonLink>
