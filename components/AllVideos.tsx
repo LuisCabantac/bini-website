@@ -57,7 +57,6 @@ export default function AllVideos({ allVideosId }) {
           type={allVideosId}
         />
       </div>
-
       {result ? (
         <ul className="grid gap-y-4 pt-6 md:grid-cols-2 md:gap-5 md:pt-0">
           {result.map((video, i) => (

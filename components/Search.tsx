@@ -13,13 +13,13 @@ export default function Search({
 }) {
   return (
     <form
-      className="flex flex-1 items-center justify-between rounded-full bg-[#eefafb]"
+      className="flex items-center justify-center rounded-full bg-[#eefafb]"
       onSubmit={handleSubmit}
     >
       <input
         type="search"
         placeholder={`Search ${type === "all-videos" ? "videos" : "playlists"}`}
-        className="grow rounded-full bg-[#eefafb] px-6 py-2 outline-none placeholder:text-[#99beb3] focus:outline-0 md:py-0"
+        className="grow rounded-full bg-[#eefafb] px-6 py-3 outline-none placeholder:text-[#99beb3] focus:outline-0 md:py-0"
         ref={query}
       />
       <Button type="submit">Search</Button>

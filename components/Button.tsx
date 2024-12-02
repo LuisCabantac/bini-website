@@ -6,7 +6,7 @@ const buttonSize = {
   small: "md:px-6 md:py-3 px-3 py-2 md:text-base text-xs text-[#fffbe6]",
   medium:
     "px-4 py-2 bg-transparent border-2 border-[#245055] text-[#245055] hover:text-[#3a6266] hover:border-[#3a6266]",
-  large: "md:px-6 md:py-3  px-8 py-4 text-lg text-base text-[#fffbe6]",
+  large: "md:px-6 md:py-3 px-8 py-4 text-[#fffbe6]",
 };
 
 export default function Button({
@@ -34,7 +34,7 @@ export default function Button({
           : "bg-[#ffd801] hover:bg-[#f8d300]"
       } ${
         buttonSize[size]
-      } inline-block cursor-pointer rounded-full font-extrabold leading-[1.1] transition-colors`}
+      } inline-block cursor-pointer rounded-full font-bold leading-[1.1] transition-colors`}
     >
       <button className="active:outline-none" onClick={onClick} type={type}>
         {children}
