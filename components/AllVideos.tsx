@@ -48,7 +48,7 @@ export default function AllVideos({ allVideosId }) {
         </div>
       </ButtonLink>
       <div className="md:flex md:items-center md:justify-between md:gap-20">
-        <h1 className="mb-4 mt-4 text-4xl font-bold md:mb-6 md:mt-6 md:text-6xl">
+        <h1 className="mb-4 mt-4 text-4xl font-bold md:mb-6 md:mt-6 md:text-5xl">
           {allVideosId === "all-videos" ? "All videos" : "All playlists"}
         </h1>
         <Search
@@ -59,7 +59,7 @@ export default function AllVideos({ allVideosId }) {
       </div>
 
       {result ? (
-        <ul className="flex flex-wrap items-center gap-y-4 pt-6 md:gap-5 md:pt-0">
+        <ul className="grid gap-y-4 pt-6 md:grid-cols-2 md:gap-5 md:pt-0">
           {result.map((video, i) => (
             <ListAll
               key={i}

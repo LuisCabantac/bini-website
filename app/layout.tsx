@@ -24,7 +24,9 @@ export default function RootLayout({
       <body className={`${worksans.className} bg-[#ace4ea]`}>
         <Providers>
           <Nav />
-          <main className="mx-6 text-[#245055] md:mx-16">{children}</main>
+          <main className="mx-auto max-w-5xl px-6 text-[#245055] md:px-16">
+            {children}
+          </main>
           <Footer />
         </Providers>
       </body>

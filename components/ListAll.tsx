@@ -17,8 +17,8 @@ export default function ListAll({
   const { isMobile } = useMobileWidth();
 
   return (
-    <li className="w-full md:w-[23rem]">
-      <div className="video__container relative h-[12.5rem] md:w-[23rem]">
+    <li className="w-full">
+      <div className="video__container relative h-[12.5rem] md:h-[15rem]">
         <a
           href={`https://www.youtube.com/${
             section === "playlist"

@@ -209,7 +209,7 @@ h4 {
 @media (min-width: 768px) {
   .embla__buttons {
     position: absolute;
-    right: 18.5rem;
+    right: 10.5rem;
     top: 53%;
     transform: translate(0, -100%);
   }

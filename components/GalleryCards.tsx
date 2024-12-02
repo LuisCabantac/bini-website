@@ -14,7 +14,7 @@ export default function GalleryCards({
         <div
           key={item.id}
           onClick={() => openZoomedImage(item.url)}
-          className={`md:w-full ${height} h-[18rem] w-full`}
+          className={`${height} h-[18rem] w-full md:h-[13rem]`}
         >
           <div className="relative h-full w-full">
             <Image

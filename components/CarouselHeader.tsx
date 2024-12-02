@@ -6,7 +6,7 @@ export default function CarouselHeader({
   currentSlide: number;
 }) {
   return (
-    <div className="absolute left-[1.8rem] right-0 top-[18rem] drop-shadow-2xl md:left-[9rem] md:top-[13rem]">
+    <div className="absolute left-[1.8rem] right-0 top-[18rem] drop-shadow-2xl md:left-[4rem] md:top-[13rem]">
       <h3 className="relative z-10 text-3xl font-semibold text-[#eefafb] md:w-7 md:text-6xl">
         {carouselData[currentSlide - 1]?.name}
       </h3>

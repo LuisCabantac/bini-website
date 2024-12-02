@@ -13,12 +13,12 @@ export default function HeaderTitle({
     <div>
       {type === "h1" ? (
         <h1
-          className={`${raleway.className} mb-4 text-4xl font-bold md:mb-6 md:text-6xl`}
+          className={`${raleway.className} mb-4 text-4xl font-bold md:mb-6 md:text-5xl`}
         >
           {children}
         </h1>
       ) : (
-        <h2 className={`${raleway.className} text-3xl font-bold md:text-5xl`}>
+        <h2 className={`${raleway.className} text-3xl font-bold md:text-4xl`}>
           {children}
         </h2>
       )}

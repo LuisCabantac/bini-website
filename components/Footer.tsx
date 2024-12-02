@@ -15,7 +15,6 @@ export default function Footer() {
       }`}
     >
       <Socials path="footer" />
-
       <Newsletter />
       <p className="mt-4 text-xs md:mt-0 md:text-inherit">
         &copy; ABS-CBN Corporation. Designed by Luis Cabantac

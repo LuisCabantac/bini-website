@@ -5,7 +5,7 @@ import { raleway } from "@/lib/fonts";
 const buttonSize = {
   small: "md:px-6 md:py-3 px-3 py-2 md:text-base text-xs text-[#fffbe6]",
   medium:
-    "md:px-6 md:py-3 px-4 py-2 bg-transparent border-2 border-[#245055] text-[#245055] hover:text-[#3a6266] hover:border-[#3a6266]",
+    "px-4 py-2 bg-transparent border-2 border-[#245055] text-[#245055] hover:text-[#3a6266] hover:border-[#3a6266]",
   large: "px-6 py-3 md:text-lg text-base text-[#fffbe6]",
 };
 
