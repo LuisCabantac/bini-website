@@ -1,24 +1,22 @@
 # BINI Website Concept
 
-Website concept for BINI, showcasing their music, videos, and upcoming events.
+A fan website concept for BINI showcasing music, videos, and events with YouTube API integration.
 
-## Screenshots
+![bini-page](https://github.com/user-attachments/assets/af386fd0-548f-454d-92ad-6b865b0a23aa)
 
-![home](https://github.com/user-attachments/assets/29dbd89c-cd84-46ab-9488-eb5d1e86c26a)
-![about-1](https://github.com/user-attachments/assets/8d5c631e-61ba-414f-97bd-6b7d9e1f3638)
-![about-2](https://github.com/user-attachments/assets/b391c265-7865-45c7-a6b1-4a6145d012d2)
-![about-3](https://github.com/user-attachments/assets/6b0c762c-a50d-425e-9167-0ca55b10a1ba)
-![music-1](https://github.com/user-attachments/assets/ad79890e-37bc-4e25-b13f-1632d740e5be)
-![music-2](https://github.com/user-attachments/assets/f2f3c61b-a609-43e8-8207-f75e1b33bd4c)
-![videos-1](https://github.com/user-attachments/assets/04c555ee-81c1-401c-a50d-ecef9a5389c8)
-![videos-2](https://github.com/user-attachments/assets/5bf070c2-fecc-424d-906e-093e8df2d879)
-![events-1](https://github.com/user-attachments/assets/8abee3fe-8480-41c0-9c91-e42cdc4a2766)
-
-## Built using
+## Built with
 
 - Next.js 14
 - Tailwind CSS
 - YouTube Data API v3
+
+## Screenshots
+
+![bini-home](https://github.com/user-attachments/assets/a4e922a8-41b6-46f6-9fa3-76434a656e2d)
+![bini-about](https://github.com/user-attachments/assets/938dc0b3-3422-4b78-9315-73e02b621183)
+![bini-music](https://github.com/user-attachments/assets/e01c45a6-b880-4e56-8a6e-e172574653f8)
+![bini-videos](https://github.com/user-attachments/assets/78e8e75c-df67-43cb-9618-2dedead2f3f4)
+![bini-events](https://github.com/user-attachments/assets/f334c3af-8f36-465d-9c8b-edc0292ddbf9)
 
 ## Disclaimer
 
