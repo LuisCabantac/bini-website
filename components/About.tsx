@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import groupProfile from "@/public/profile-group.jpeg";
+import groupProfile from "@/public/profile-group.webp";
 
 import HeaderTitle from "@/components/HeaderTitle";
 
