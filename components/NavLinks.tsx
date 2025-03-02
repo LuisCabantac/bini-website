@@ -69,9 +69,9 @@ export default function NavLinks() {
                     isSticky ? "top-0 pt-[12rem]" : "pt-[12rem]"
                   } flex md:bg-transparent ${
                     pathname === "/" && isMobileNav
-                      ? "bg-gradient-to-tr from-[#c92a2a] to-[#ce3f3f]"
+                      ? "bg-gradient-to-tr from-[#10A4C2] to-[#10A4C2]"
                       : pathname === "/" && isSticky
-                        ? "bg-[#c92a2a]/90"
+                        ? "bg-[#16415E]/90"
                         : pathname !== "/" && isMobileNav
                           ? "bg-gradient-to-tr from-[#59c8d4] to-[#6aced8]"
                           : "bg-[#59c8d4]/90"
@@ -84,7 +84,7 @@ export default function NavLinks() {
                 href="/"
                 onClick={handleSetIsMobileNav}
                 className={`transition-colors ${
-                  pathname === "/" ? "font-bold text-[#f4d4d4]" : ""
+                  pathname === "/" ? "font-bold text-[#ffdc1a]" : ""
                 }`}
               >
                 Home

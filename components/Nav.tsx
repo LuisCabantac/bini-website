@@ -13,9 +13,9 @@ export default function Nav() {
 
   const navTheme =
     pathname === "/" && !isSticky
-      ? "bg-gradient-to-b from-[#8d1d1d34] to-[rgba(201, 42, 42, 0.055)]"
+      ? "bg-gradient-to-b from-[#16415e1b] to-[#16415e08]"
       : pathname === "/" && isSticky
-        ? "bg-[#c92a2a]/90"
+        ? "bg-[#16415E]/90"
         : (pathname !== "/" && isSticky && window.innerWidth >= 900) ||
             (pathname !== "/" &&
               isSticky &&

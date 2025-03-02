@@ -30,11 +30,11 @@ export default function Button({
       target="_blank"
       className={`${raleway.className} ${
         path === "/"
-          ? "bg-[#f03e3e] hover:bg-[#e03131]"
+          ? "bg-[#16415E] hover:bg-[#1e5276]"
           : "bg-[#ffd801] hover:bg-[#f8d300]"
       } ${
         buttonSize[size]
-      } inline-block cursor-pointer rounded-full font-bold leading-[1.1] transition-colors`}
+      } inline-block cursor-pointer rounded-full font-bold leading-[1.1] transition-colors md:px-8 md:py-4`}
     >
       <button className="active:outline-none" onClick={onClick} type={type}>
         {children}
