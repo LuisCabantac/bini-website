@@ -13,7 +13,7 @@ export default function Nav() {
 
   const navTheme =
     pathname === "/" && !isSticky
-      ? "bg-gradient-to-b from-[#16415e1b] to-[#16415e08]"
+      ? "bg-gradient-to-b from-[#16415e1b] to-[#16415e00]"
       : pathname === "/" && isSticky
         ? "bg-[#16415E]/90"
         : (pathname !== "/" && isSticky && window.innerWidth >= 900) ||
