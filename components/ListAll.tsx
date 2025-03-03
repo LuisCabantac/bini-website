@@ -40,15 +40,13 @@ export default function ListAll({
       <p
         className={`${
           section === "playlist" ? "text-center" : ""
-        } pt-1 text-sm font-semibold md:w-[23rem] md:text-lg`}
+        } w-full overflow-hidden text-ellipsis pt-1 text-sm font-semibold md:whitespace-nowrap md:text-lg`}
       >
         {section === "playlist"
           ? content.snippet.title.replace(/&#39;/g, "'").replace(/&quot;/g, '"')
           : content.snippet.title
               .replace(/&#39;/g, "'")
-              .replace(/&quot;/g, '"')
-              .slice(0, isMobile ? 45 : 35)
-              .concat("...")}
+              .replace(/&quot;/g, '"')}
       </p>
     </li>
   );
