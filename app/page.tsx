@@ -19,10 +19,10 @@ export default function Page() {
         fill
         quality={100}
         className="block object-cover"
-        alt="Cherry On Top album cover"
+        alt="Blink Twice album cover"
       />
       <div className="absolute bottom-[10%] left-[50%] translate-x-[-50%] translate-y-0 md:bottom-[16%] md:left-[4%] md:translate-x-[100%]">
-        <Button path="/" href="https://orcd.co/bini-cherryontop">
+        <Button path="/" href="https://orcd.co/bini_blinktwice">
           Listen now
         </Button>
       </div>
