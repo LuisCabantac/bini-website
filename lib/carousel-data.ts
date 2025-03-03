@@ -1,13 +1,13 @@
 import { StaticImageData } from "next/image";
 
-import aiah from "@/public/member-carousel/bini-about-cot-aiah.webp";
-import colet from "@/public/member-carousel/bini-about-cot-colet.webp";
-import maloi from "@/public/member-carousel/bini-about-cot-maloi.webp";
-import gwen from "@/public/member-carousel/bini-about-cot-gwen.webp";
-import stacey from "@/public/member-carousel/bini-about-cot-stacey.webp";
-import mikha from "@/public/member-carousel/bini-about-cot-mikha.webp";
-import jhoanna from "@/public/member-carousel/bini-about-cot-jhoanna.webp";
-import sheena from "@/public/member-carousel/bini-about-cot-sheena.webp";
+import aiah from "@/public/member-carousel/BINI-AIAH.webp";
+import colet from "@/public/member-carousel/BINI-COLET.webp";
+import maloi from "@/public/member-carousel/BINI-MALOI.webp";
+import gwen from "@/public/member-carousel/BINI-GWEN.webp";
+import stacey from "@/public/member-carousel/BINI-STACEY.webp";
+import mikha from "@/public/member-carousel/BINI-MIKHA.webp";
+import jhoanna from "@/public/member-carousel/BINI-JHOANNA.webp";
+import sheena from "@/public/member-carousel/BINI-SHEENA.webp";
 
 export interface MembersCarouselType {
   id: number;
