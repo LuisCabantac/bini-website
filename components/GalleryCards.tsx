@@ -21,7 +21,7 @@ export default function GalleryCards({
               src={item.url}
               alt={item.name}
               fill
-              className="rounded-xl object-cover md:rounded-2xl"
+              className="cursor-pointer rounded-xl object-cover md:rounded-2xl"
               placeholder="blur"
             />
           </div>
