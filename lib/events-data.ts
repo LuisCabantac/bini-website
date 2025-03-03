@@ -24,7 +24,7 @@ export const announcementsData: AnnouncementsDataType[] = [
     description:
       "The BINIverse World Tour Dubai & London shows are happening soon! Whether you're looking for the ultimate VIP experience or a budget-friendly way to join the fun, there's a ticket option for everyone. Check out the full pricing and VIP package details below and get ready to be part of this unforgettable experience!",
     btnText: "Get Your Tickets Now",
-    btnUrl: "https://app.iwanttfc.com/ROWBiniDocuEp1",
+    btnUrl: "https://bini.abs-cbn.com/#artistTour",
     img: biniWorldTour,
   },
 ];
